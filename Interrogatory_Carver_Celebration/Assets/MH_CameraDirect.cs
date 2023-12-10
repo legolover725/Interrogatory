@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class MH_CameraDirect : MonoBehaviour
 {
@@ -17,7 +18,6 @@ public class MH_CameraDirect : MonoBehaviour
     // Update is called once per frame 
     void Update() 
     { 
-
          if(Input.GetMouseButtonDown(0) && !detectHit()){  
 
             Vector3 mousePos = Camera.main.ScreenToViewportPoint(Input.mousePosition);  
@@ -25,25 +25,26 @@ public class MH_CameraDirect : MonoBehaviour
             if(this.courotine == null){
                 float y = mousePos.x < 0.3f ? -20 : mousePos.x > 0.7 ? 20 : 0;
                 float x = (mousePos.y < 0.3f) ? 10: mousePos.y > 0.7 ? -10 : 0;
+
                 rot += new Vector3(x,y);
+                rot.y = Mathf.Clamp(rot.y,-20,20);
+                rot.x = Mathf.Clamp(rot.x,-10,10);
                 this.courotine = transition(rot);
             }
 
             if(courotine != null) 
-
                 StartCoroutine(this.courotine); 
-
-        }  
+            }  
     } 
 
     public bool detectHit(){ 
         RaycastHit hit; 
         Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition); 
-        return Physics.Raycast(ray,out hit, Mathf.Infinity, 1 << 5); 
+        return Physics.Raycast(ray,out hit, Mathf.Infinity, 1 << 5) || EventSystem.current.currentSelectedGameObject != null || EventSystem.current.IsPointerOverGameObject();
     } 
 
      IEnumerator transition(Vector3 r){
-        Quaternion l = Quaternion.Euler(new Vector3(Mathf.Clamp(r.x,-10,10),Mathf.Clamp(r.y,-20,20),0));   
+        Quaternion l = Quaternion.Euler(new Vector3(r.x,r.y,0));   
             float time = 0.5f;  
             float t = 0;    
 
