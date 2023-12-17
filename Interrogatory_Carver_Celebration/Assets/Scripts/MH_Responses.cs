@@ -3,40 +3,57 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 using UnityEngine.UI;
+using System.Linq;
+using UnityEngine.EventSystems;
 
 public class MH_Responses : MonoBehaviour
 {
     [Serializable]
     public class questionList {
+        [TextAreaAttribute]
         public string question;
-        public List<string> answer = new List<string>();
-        public int suspicionLevel; 
+        public List<answerObj> answers = new List<answerObj>();
+    }
+    [Serializable]
+    public class answerObj{
+        [TextAreaAttribute]
+        public string answer;
+        public double suspicion;
+    }
+    public List<questionList> list = new List<questionList>();
+    [SerializeField]
+    private GameObject[] buttonList;
+    [SerializeField]  
+    private int progression;
+  
+    public double suspicionMeter;
+    
+    questionList obj;
+ 
+    public void assignValue(){
+        //loops to plaster the answers on the buttons  
+      for(int i = 0; i < obj.answers.Count; i++){
+        buttonList[i].transform.GetChild(0).GetComponent<Text>().text = obj.answers[i].answer;
+      }  
     }
    
-    public List<questionList> list = new List<questionList>();
-    public GameObject[] buttonList;
-    public void assignValue(){
-        for(int i = 0; i < list.Count; i++){
-            for(int y = 0; y < list[i].answer.Count; y++){
-                buttonList[y].GetComponent<Text>().text = list[i].answer[y];
-            }
-        }
-
-    }
-    
-    public void getEvent(){
-
-    }
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        assignValue();
+    public void minusSuspicion(){
+    //the button object
+        GameObject o = EventSystem.current.currentSelectedGameObject;
+        string name = o.transform.GetChild(0).GetComponent<Text>().text;
+       //determines whether a name similar to that of the buttons 
+        answerObj results = (name != "") ? obj.answers.Single(s => s.answer == name): null;
+        //minus the suspicion based on the suspicion value of the question
+        if(results != null && progression < list.Count){
+           suspicionMeter = suspicionMeter + results.suspicion;
+          progression++;
+          if(progression < list.Count)
+          obj = list[progression];
+        }      
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+    void Awake(){
+        obj = list[progression];
     }
+ 
 }
