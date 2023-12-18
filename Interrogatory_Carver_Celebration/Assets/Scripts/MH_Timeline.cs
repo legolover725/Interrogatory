@@ -12,15 +12,11 @@ public class MH_Timeline : MonoBehaviour
     public class scene {
         public string name;
         public UnityEvent action;
-        public bool isInputted;
+        public bool needsInput;
         public UnityEvent fadeOut;
+        public AudioClip recording;
+        public float time;
        
-        public scene(string n, UnityEvent a, bool i, UnityEvent f){
-            n = name;
-            action = a;
-            isInputted = i;
-            fadeOut = f;
-        }
     }
 
     [SerializeField]
@@ -44,8 +40,11 @@ public class MH_Timeline : MonoBehaviour
        int currentScene = 0;
        while(currentScene < scenes.Count){
         scenes[currentScene].action.Invoke();
-        if(scenes[currentScene].isInputted)
+
+         Debug.Log(questionAnswered());
+        if(scenes[currentScene].needsInput)
             yield return new WaitUntil(() => questionAnswered());
+    
         currentScene++;
         yield return new WaitForSeconds(0.25f);
 
@@ -56,6 +55,7 @@ public class MH_Timeline : MonoBehaviour
     //determines whether a user has made an answer
         string o = (EventSystem.current.currentSelectedGameObject != null) ? EventSystem.current.currentSelectedGameObject.tag: "";
         return o == buttonTagName;
+        
     }
     // Update is called once per frame
     void Update()
