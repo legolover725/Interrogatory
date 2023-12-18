@@ -23,18 +23,27 @@ public class MH_Responses : MonoBehaviour
     public List<questionList> list = new List<questionList>();
     [SerializeField]
     private GameObject[] buttonList;
-    [SerializeField]  
+
+    [SerializeField]
+    private GameObject textObj;
+
     private int progression;
   
     public double suspicionMeter;
     
+    public CanvasGroup cg;
+
     questionList obj;
  
     public void assignValue(){
-        //loops to plaster the answers on the buttons  
+        cg.alpha = 1;
+        cg.blocksRaycasts = true;
+        //loops to plaster the answers on the buttons 
+        textObj.GetComponent<Text>().text = obj.question;
       for(int i = 0; i < obj.answers.Count; i++){
         buttonList[i].transform.GetChild(0).GetComponent<Text>().text = obj.answers[i].answer;
-      }  
+      }
+
     }
    
     public void minusSuspicion(){
@@ -49,11 +58,16 @@ public class MH_Responses : MonoBehaviour
           progression++;
           if(progression < list.Count)
           obj = list[progression];
-        }      
+        }
+        FadeOut();     
     }
 
     void Awake(){
         obj = list[progression];
     }
- 
+    
+    public void FadeOut(){
+        cg.alpha = 0;
+        cg.blocksRaycasts = false;
+    }
 }
