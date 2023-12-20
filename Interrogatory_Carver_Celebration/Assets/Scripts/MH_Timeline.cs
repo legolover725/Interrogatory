@@ -47,6 +47,11 @@ public class MH_Timeline : MonoBehaviour
         if(scenes[currentScene].needsInput)
             yield return new WaitUntil(() => questionAnswered());
 
+        yield return new WaitForSeconds(0.5f);
+        
+    
+        scenes[currentScene].fadeOut.Invoke();
+
         yield return new WaitForSeconds(scenes[currentScene].time);
 
         currentScene++;
@@ -57,11 +62,21 @@ public class MH_Timeline : MonoBehaviour
 
     public bool questionAnswered(){
     //determines whether a user has made an answer
-        RaycastHit hit; 
-        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition); 
         string o = (EventSystem.current.currentSelectedGameObject != null) ? EventSystem.current.currentSelectedGameObject.tag: "";
-        return o == buttonTagName || Physics.Raycast(ray,out hit, Mathf.Infinity, 1 << 5);
+        return o == buttonTagName;
         
+    }
+
+    public bool raycastObj(){
+           RaycastHit hit; 
+        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition); 
+        if(Physics.Raycast(ray,out hit, Mathf.Infinity, 1 << 6)){
+            hit.collider.gameObject.GetComponent<MH_Obj>().ue.Invoke();
+            return true;
+        }else{
+            return false;
+        }
+
     }
     // Update is called once per frame
     void Update()

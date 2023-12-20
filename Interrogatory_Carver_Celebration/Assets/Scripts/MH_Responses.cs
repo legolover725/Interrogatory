@@ -5,6 +5,7 @@ using System;
 using UnityEngine.UI;
 using System.Linq;
 using UnityEngine.EventSystems;
+using UnityEngine.Events;
 
 public class MH_Responses : MonoBehaviour
 {
@@ -18,6 +19,7 @@ public class MH_Responses : MonoBehaviour
     public class answerObj{
         [TextAreaAttribute]
         public string answer;
+        public UnityEvent action;
         public double suspicion;
     }
     public List<questionList> list = new List<questionList>();
@@ -34,6 +36,8 @@ public class MH_Responses : MonoBehaviour
     public CanvasGroup cg;
 
     questionList obj;
+
+    answerObj ans = null;
  
     public void assignValue(){
         cg.alpha = 1;
@@ -43,7 +47,6 @@ public class MH_Responses : MonoBehaviour
       for(int i = 0; i < obj.answers.Count; i++){
         buttonList[i].transform.GetChild(0).GetComponent<Text>().text = obj.answers[i].answer;
       }
-
     }
    
     public void minusSuspicion(){
@@ -55,11 +58,17 @@ public class MH_Responses : MonoBehaviour
         //minus the suspicion based on the suspicion value of the question
         if(results != null && progression < list.Count){
            suspicionMeter = suspicionMeter + results.suspicion;
+            ans = results;
           progression++;
           if(progression < list.Count)
           obj = list[progression];
         }
         FadeOut();     
+    }
+
+    public void InvokeAction(){
+        ans.action.Invoke();
+       
     }
 
     void Awake(){

@@ -14,7 +14,7 @@ public class MH_Cup : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        spawnCup();
+
     }
 
     // Update is called once per frame
