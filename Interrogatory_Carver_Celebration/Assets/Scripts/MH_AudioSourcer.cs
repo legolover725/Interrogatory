@@ -5,6 +5,9 @@ using UnityEngine;
 public class MH_AudioSourcer: MonoBehaviour
 {
     public List<AudioSource> audioList;
+    public List<AudioSource> backgroundAudio;
+    public List<AudioClip> backgroundClip;
+    int intense;
 
     public void playMultiple(AudioClip clip1, AudioClip clip2, AudioClip clip3, bool l){
           playClip(clip1,0,0.5f,l);
@@ -47,10 +50,28 @@ public class MH_AudioSourcer: MonoBehaviour
     public AudioSource getAudioSource(int i){
         return audioList[i];
     }
+
+    public void addIntensity(int it){
+        intense += it;
+        for(int i = 0; i < backgroundAudio.Count; i++){
+            if(intense == i){
+                backgroundAudio[i].clip = backgroundClip[i];
+            }else{
+                backgroundAudio[i].clip = null;
+            }
+        }
+    }
+
+    public void audioBackground(){
+        for(int i = 0; i < backgroundAudio.Count; i++){
+            backgroundAudio[i].Play();
+            backgroundAudio[i].loop = true;
+        }
+    }
     // Start is called before the first frame update
     void Start()
     {
-        
+        audioBackground();
     }
 
     // Update is called once per frame

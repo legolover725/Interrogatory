@@ -19,7 +19,6 @@ public class MH_Timeline : MonoBehaviour
         public float time;
        
     }
-
  
     public List<scene> scenes = new List<scene>();
 
@@ -31,34 +30,30 @@ public class MH_Timeline : MonoBehaviour
 
     public int progression = 0;
 
-    bool inputDetected, start;
+    bool inputDetected, start, isEnd;
     scene obj = null;
-    // Start is called before the first frame update
-    void Start()
-    {
-     
-     
-    }
 
    IEnumerator gameState(){
         //iterates scenes until the end, allow for questions to play 
        for(int currentScene = progression; currentScene < scenes.Count -1; currentScene++){
-       obj = scenes[currentScene];
+           if(!isEnd){
+            obj = scenes[currentScene];
 
-           if(scenes[currentScene].action != null)
-        scenes[currentScene].action.Invoke();
+            if(scenes[currentScene].action != null)
+                scenes[currentScene].action.Invoke();
 
-        if(scenes[currentScene].needsInput)
-            yield return new WaitUntil(() => inputDetected);
-        inputDetected = false;
+            if(scenes[currentScene].needsInput)
+                yield return new WaitUntil(() => inputDetected);
+                inputDetected = false;
  
-        if(GameObject.FindGameObjectWithTag(buttonTagName) != null)
-            Debug.Log("cup exists");
+            if(GameObject.FindGameObjectWithTag(buttonTagName) != null)
+                Debug.Log("cup exists");
            
-        yield return new WaitForSeconds(scenes[currentScene].time);
+                yield return new WaitForSeconds(scenes[currentScene].time);
 
-        yield return new WaitForSeconds(0.25f);
-        progression = currentScene;
+                yield return new WaitForSeconds(0.25f);
+                progression = currentScene;
+           }
         }
         
         scenes[scenes.Count - 1].action.Invoke();
@@ -73,6 +68,10 @@ public class MH_Timeline : MonoBehaviour
     public void isInput(){
       inputDetected = true;
       obj.fadeOut.Invoke();
+    }
+
+    public void endGame(){
+        isEnd = true;
     }
 
     public void restartGame(){
