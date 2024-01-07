@@ -39,6 +39,11 @@ public class MH_AudioSourcer: MonoBehaviour
         a.Play();
     }
 
+    public void endAudio(int i){
+        audioList[i].clip = null;
+    }
+
+   
     public AudioSource getAudioSource(int i){
         return audioList[i];
     }

@@ -17,6 +17,7 @@ public class MH_DecideGuilty : MonoBehaviour
             sum += c;
         }
         sum = sum/l.Count;
+        Debug.Log("the average score is " + sum);
         return ((s + sum) > 65);
     }
 

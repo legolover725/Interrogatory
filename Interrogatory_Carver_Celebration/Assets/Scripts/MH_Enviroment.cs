@@ -35,6 +35,8 @@ public class MH_Enviroment : MonoBehaviour
       }else{
         audio.getAudioSource(0).loop = false;
         audio.getAudioSource(1).loop = false;
+        audio.endAudio(0);
+        audio.endAudio(1);
         firstColor.r = 0.2f;
         RenderSettings.ambientLight = new Color(0.0460f,0.0642f,0.0849f);
       }
@@ -63,7 +65,14 @@ public class MH_Enviroment : MonoBehaviour
     }
     public IEnumerator endEvent(){
          audio.playClip(clip,0,0.5f,false);
-        yield return new WaitUntil(() => !audio.getAudioSource(0).isPlaying);
+         while(audio.getAudioSource(0).isPlaying){
+            GetComponent<Light>().color = Color.Lerp(GetComponent<Light>().color,new Color(0.1f,0.1f,0.1f),Time.deltaTime/5f);
+            RenderSettings.ambientLight = Color.Lerp(RenderSettings.ambientLight, new Color(0.01f,0.01f,0.01f),Time.deltaTime/5f);
+            yield return null;
+         }
+         yield return new WaitForSeconds(0.25f);
+     
+        //yield return new WaitUntil(() => !audio.getAudioSource(0).isPlaying);
     }
     
 }
