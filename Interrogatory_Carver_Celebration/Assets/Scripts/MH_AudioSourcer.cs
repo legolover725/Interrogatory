@@ -9,11 +9,6 @@ public class MH_AudioSourcer: MonoBehaviour
     public List<AudioClip> backgroundClip;
     int intense;
 
-    public void playMultiple(AudioClip clip1, AudioClip clip2, AudioClip clip3, bool l){
-          playClip(clip1,0,0.5f,l);
-          playClip(clip2,1,0.2f,l);
-          playClip(clip3,2,0.1f,l);   
-    }
 
     public void playClip(AudioClip c, int i, float v, bool l){
        
@@ -71,7 +66,7 @@ public class MH_AudioSourcer: MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        audioBackground();
+ 
     }
 
     // Update is called once per frame
