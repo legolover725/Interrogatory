@@ -29,14 +29,13 @@ public class MH_Enviroment : MonoBehaviour
         firstColor.r = (range - 30)/100;
         RenderSettings.ambientLight = new Color((range-50)/100,0.0624f,0.0849f);
         if(range > startBreathing){
-            audio.playMultiple(clip1,clip2,null,true);
-            audio.getAudioSource(0).volume = 0.2f;
+            audio.playClip(clip1,0,0.2f,true);
         }
       }else{
         audio.getAudioSource(0).loop = false;
-        audio.getAudioSource(1).loop = false;
+    
         audio.endAudio(0);
-        audio.endAudio(1);
+        
         firstColor.r = 0.2f;
         RenderSettings.ambientLight = new Color(0.0460f,0.0642f,0.0849f);
       }
