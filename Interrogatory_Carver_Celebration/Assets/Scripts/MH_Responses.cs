@@ -41,14 +41,16 @@ public class MH_Responses : MonoBehaviour
     public float worryMeter;
     
     private CanvasGroup cg;
+    private MH_ButtonSpawner b;
 
     questionList obj;
  
     public void assignValue(){
-   
+        
          if(progression < list.Count){
             FadeChoice(cg,1);
             obj = list[progression];
+            buttonList = b.buttonSpawn(obj.answers.Count,buttonList);
             //loops to plaster the answers on the buttons 
             textObj.GetComponent<Text>().text = obj.question;
             for(int i = 0; i < obj.answers.Count; i++){
@@ -87,6 +89,7 @@ public class MH_Responses : MonoBehaviour
 
     void Awake(){
         cg = GetComponent<CanvasGroup>();
+        b = GetComponent<MH_ButtonSpawner>();
         FadeChoice(cg,0);   
     }
     
