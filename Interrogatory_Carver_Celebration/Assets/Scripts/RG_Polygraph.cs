@@ -61,7 +61,7 @@ public class RG_Polygraph : MonoBehaviour
             // }
             // Debug.Log("height: " + (rectTransform.transform.position.y-(rectTransform.sizeDelta.y/2)) + " " + rectTransform.transform.position.y + " " + rectTransform.sizeDelta.y/2);
                 graphingPrefab = (GameObject)Instantiate(prefab, new Vector3(rectTransform.transform.position.x, function(GameObject.Find("PanelUI").GetComponent<MH_Responses>().worryMeter) + 44, 55.6f), Quaternion.identity, gameObject.transform.parent);
-                graphingPrefab.transform.SetParent(GameObject.Find("Polygraph").GetComponent<Transform>());
+                graphingPrefab.transform.SetParent(GameObject.Find("Border").GetComponent<Transform>());
             time = 0f;
             Debug.Log(a);
         }
@@ -73,7 +73,9 @@ public class RG_Polygraph : MonoBehaviour
         // return ((Mathf.Pow(a, 4f)/3f)+(2*Mathf.Pow(a, 3f))-(6*a)-3)/scalar;
         // return (((5*Mathf.Pow(a, 3f))-(20*a)-3)/scalar);
         // return Mathf.Pow(2f, a-1);
-        return 4*Mathf.Cos(a)+1;
+        // return 4*Mathf.Cos(a*.125f)+1;
+        // return Mathf.Pow(a*.03, 3)/3;
+        return a*.1f;
         // return (2*Mathf.Sin(Mathf.Cos(Mathf.Pow(a*Mathf.Cos(Mathf.Pow(-1*(Mathf.Sin(3*a)), 2)), 2))));
         // return Random.value*3f;
     }
