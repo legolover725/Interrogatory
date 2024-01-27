@@ -11,7 +11,6 @@ public class MH_ButtonSpawner : MonoBehaviour
     private RectTransform group;
     [SerializeField]
     private MH_Timeline t;
-    public bool b;
     public GameObject[] buttonSpawn(int num, GameObject[] l){
         for(int i = 0; i < group.transform.childCount; i++){
             Destroy(group.transform.GetChild(i).gameObject);

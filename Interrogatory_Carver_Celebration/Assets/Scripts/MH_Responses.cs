@@ -31,7 +31,7 @@ public class MH_Responses : MonoBehaviour
     [Header("The UI objects needed to be assigned")]
     [SerializeField]
     private GameObject[] buttonList;
-   
+
     [SerializeField]
     private GameObject textObj;
     [Header("gameProgression")]
@@ -92,7 +92,8 @@ public class MH_Responses : MonoBehaviour
         b = GetComponent<MH_ButtonSpawner>();
         FadeChoice(cg,0);   
     }
-    
+   
+  
     public void FadeChoice(CanvasGroup cg, int num){
         cg.alpha = num;
         cg.interactable = (num == 1) ? true:false;

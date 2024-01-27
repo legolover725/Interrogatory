@@ -12,7 +12,7 @@ public class MH_DecideGuilty : MonoBehaviour
     public bool decide(float s, List<MH_Responses.questionList> l){
         float sum =0;
         for(int i = 0; i < l.Count; i++){
-            float c = Mathf.Abs(l[i].score - 100);
+            float c = Mathf.Abs(l[i].score - 100)/2;
             if(l[i].score != 0)
             sum += c;
         }
