@@ -11,18 +11,16 @@ public class MH_Inventory : MonoBehaviour
 
     int i = 0;
     public void add(){
-        i++;
+         i = (i >= 0 && i < evidence.Count -1) ? i+=1 : 0;
         switcher(i);
     }
 
     public void less(){
-        i--;
+        i = (i > 0 && i < evidence.Count) ? i-=1 : evidence.Count -1;
         switcher(i);
     }
     public void switcher(int s){
-        if(s >= 0 && s < evidence.Count){
-          image.sprite = evidence[s];
-        }
+          image.sprite = (s >= 0 && s < evidence.Count) ? evidence[s] : null;   
     }
     // Start is called before the first frame update
     void Start()
