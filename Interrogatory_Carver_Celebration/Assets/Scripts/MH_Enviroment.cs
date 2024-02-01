@@ -19,7 +19,7 @@ public class MH_Enviroment : MonoBehaviour
     private MH_AudioSourcer audio;
 
     [SerializeField]
-    private AudioClip clip, clip1,clip2;
+    private AudioClip clip, clip1, clip2;
 
     bool isEnd;
 

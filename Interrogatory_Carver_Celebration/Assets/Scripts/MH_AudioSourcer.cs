@@ -10,6 +10,10 @@ public class MH_AudioSourcer: MonoBehaviour
     int intense;
 
 
+    // i is index of list (which audio clip you want to play)
+    // v is volume
+    // l specifies if an audio clip will be looped
+    // c is the audio clip
     public void playClip(AudioClip c, int i, float v, bool l){
        
         if(audioList[i].clip != c || c == null)
