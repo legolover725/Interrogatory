@@ -216,7 +216,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 82838296}
   m_CullTransparentMesh: 1
+<<<<<<< Updated upstream
 --- !u!1 &183951237
+=======
+--- !u!1 &91030564
+>>>>>>> Stashed changes
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -224,21 +228,36 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
+<<<<<<< Updated upstream
   - component: {fileID: 183951239}
   - component: {fileID: 183951238}
   m_Layer: 0
   m_Name: audioSource
+=======
+  - component: {fileID: 91030565}
+  - component: {fileID: 91030567}
+  - component: {fileID: 91030566}
+  m_Layer: 5
+  m_Name: Background
+>>>>>>> Stashed changes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
+<<<<<<< Updated upstream
   m_IsActive: 0
 --- !u!82 &183951238
 AudioSource:
+=======
+  m_IsActive: 1
+--- !u!224 &91030565
+RectTransform:
+>>>>>>> Stashed changes
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< Updated upstream
   m_GameObject: {fileID: 183951237}
   m_Enabled: 1
   serializedVersion: 4
@@ -344,6 +363,134 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+=======
+  m_GameObject: {fileID: 91030564}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2071152788}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0.25}
+  m_AnchorMax: {x: 1, y: 0.75}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &91030566
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 91030564}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &91030567
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 91030564}
+  m_CullTransparentMesh: 1
+--- !u!1 &146734434
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 146734435}
+  - component: {fileID: 146734437}
+  - component: {fileID: 146734436}
+  m_Layer: 5
+  m_Name: Fill
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &146734435
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 146734434}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1443354057}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 10, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &146734436
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 146734434}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &146734437
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 146734434}
+  m_CullTransparentMesh: 1
+>>>>>>> Stashed changes
 --- !u!1 &232881945
 GameObject:
   m_ObjectHideFlags: 0
@@ -523,7 +670,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -727,6 +874,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 298222019}
+  - component: {fileID: 298222020}
   m_Layer: 5
   m_Name: GameObject
   m_TagString: Untagged
@@ -754,6 +902,30 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &298222020
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 298222018}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3da6b7483ae19f84a86177f387e0eba5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  questions:
+  - question:
+    - How do you know this
+    - Why did I do
+    - You playing with me
+    response: 
+  - question: []
+    response: 
+  - question: []
+    response: 
+  spawner: {fileID: 1596634232}
+  o: []
 --- !u!1 &319333124
 GameObject:
   m_ObjectHideFlags: 0
@@ -790,6 +962,7 @@ RectTransform:
   - {fileID: 1596634228}
   - {fileID: 709312521}
   - {fileID: 1700661261}
+  - {fileID: 2071152788}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -1618,7 +1791,7 @@ GameObject:
   - component: {fileID: 709312522}
   - component: {fileID: 709312524}
   - component: {fileID: 709312526}
-  m_Layer: 5
+  m_Layer: 7
   m_Name: Polygraph
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1912,6 +2085,81 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1698199144}
   m_LocalEulerAnglesHint: {x: 180, y: 0, z: 0}
+--- !u!1 &800035534
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 800035535}
+  - component: {fileID: 800035537}
+  - component: {fileID: 800035536}
+  m_Layer: 5
+  m_Name: Handle
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &800035535
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 800035534}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1443175607}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 20, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &800035536
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 800035534}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &800035537
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 800035534}
+  m_CullTransparentMesh: 1
 --- !u!1 &827298258
 GameObject:
   m_ObjectHideFlags: 0
@@ -4158,6 +4406,78 @@ MonoBehaviour:
   clip: {fileID: 8300000, guid: ffafbeb93e46186489c04765136162d5, type: 3}
   clip1: {fileID: 8300000, guid: 35ec7cc45e0cc67419c68a2f3a96a4ca, type: 3}
   clip2: {fileID: 8300000, guid: a9e73a39b0080fe4eaa676bdce04f530, type: 3}
+--- !u!1 &1443175606
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1443175607}
+  m_Layer: 5
+  m_Name: Handle Slide Area
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1443175607
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1443175606}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 800035535}
+  m_Father: {fileID: 2071152788}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: -20, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1443354056
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1443354057}
+  m_Layer: 5
+  m_Name: Fill Area
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1443354057
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1443354056}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 146734435}
+  m_Father: {fileID: 2071152788}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0.25}
+  m_AnchorMax: {x: 1, y: 0.75}
+  m_AnchoredPosition: {x: -5, y: 0}
+  m_SizeDelta: {x: -20, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1508465277
 GameObject:
   m_ObjectHideFlags: 0
@@ -4336,8 +4656,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   list:
+<<<<<<< Updated upstream
   - question: 'Good evening, my name is Officer Charles Berkley; thank you for coming
       today regarding the murder of Alex Brown on October 17th, 2009.  '
+=======
+  - question: 'Good evening, ryan gensler, my name is Officer Charles Berkley; thank
+      you for coming today regarding the murder of Alex Brown on October 17th, 2009.  '
+>>>>>>> Stashed changes
     isImportant: 0
     score: 0
     answers:
@@ -4345,6 +4670,7 @@ MonoBehaviour:
       action:
         m_PersistentCalls:
           m_Calls: []
+      isAsk: 0
       suspicion: 0
   - question: "Alright, I\u2019m just going to ask you a series of questions about
       the murder. As you know, this incident happened a few weeks ago, and we\u2019re
@@ -4357,6 +4683,7 @@ MonoBehaviour:
       action:
         m_PersistentCalls:
           m_Calls: []
+      isAsk: 0
       suspicion: 0
   - question: Alright, and may I ask, how did you meet Ms. Brown?
     isImportant: 1
@@ -4366,17 +4693,38 @@ MonoBehaviour:
       action:
         m_PersistentCalls:
           m_Calls: []
+      isAsk: 0
       suspicion: -10
     - answer: 'Our moms knew each other when we were younger. '
       action:
         m_PersistentCalls:
           m_Calls: []
+      isAsk: 0
       suspicion: -5
     - answer: 'We used to be neighbors growing up. '
       action:
         m_PersistentCalls:
           m_Calls: []
+      isAsk: 0
       suspicion: -2
+    - answer: Deflect Answer
+      action:
+        m_PersistentCalls:
+          m_Calls:
+          - m_Target: {fileID: 298222020}
+            m_TargetAssemblyTypeName: MH_DeflectQuestion, Assembly-CSharp
+            m_MethodName: askQuestion
+            m_Mode: 1
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: 
+              m_BoolArgument: 0
+            m_CallState: 2
+      isAsk: 1
+      suspicion: 0
   - question: I see. When did you and Ms. Brown first start dating?
     isImportant: 1
     score: 0
@@ -4385,16 +4733,19 @@ MonoBehaviour:
       action:
         m_PersistentCalls:
           m_Calls: []
+      isAsk: 0
       suspicion: -5
     - answer: 'We started dating towards the end of our junior year. '
       action:
         m_PersistentCalls:
           m_Calls: []
+      isAsk: 0
       suspicion: -10
     - answer: In college
       action:
         m_PersistentCalls:
           m_Calls: []
+      isAsk: 0
       suspicion: 15
   - question: And when did you two split up?
     isImportant: 1
@@ -4404,11 +4755,13 @@ MonoBehaviour:
       action:
         m_PersistentCalls:
           m_Calls: []
+      isAsk: 0
       suspicion: 15
     - answer: 'What do you mean? We never broke up. '
       action:
         m_PersistentCalls:
           m_Calls: []
+      isAsk: 0
       suspicion: -15
   - question: "I see\u2026 and how would you rate your relationship with Ms. Brown?"
     isImportant: 1
@@ -4419,16 +4772,19 @@ MonoBehaviour:
       action:
         m_PersistentCalls:
           m_Calls: []
+      isAsk: 0
       suspicion: -20
     - answer: 'We were happy together.  '
       action:
         m_PersistentCalls:
           m_Calls: []
+      isAsk: 0
       suspicion: -10
     - answer: 'We had our moments, but we still made it work. '
       action:
         m_PersistentCalls:
           m_Calls: []
+      isAsk: 0
       suspicion: -15
   - question: Good to hear. Would you like a sip of water?
     isImportant: 0
@@ -4450,14 +4806,16 @@ MonoBehaviour:
               m_StringArgument: 
               m_BoolArgument: 0
             m_CallState: 2
+      isAsk: 0
       suspicion: 0
     - answer: "No, I\u2019m okay, thank you."
       action:
         m_PersistentCalls:
           m_Calls: []
+      isAsk: 0
       suspicion: 0
-  - question: No problem. Sssniperwolf, are you aware of the murder of Ms. Brown?
-      Has anyone told you any information about the murder?
+  - question: No problem. ryan, are you aware of the murder of Ms. Brown? Has anyone
+      told you any information about the murder?
     isImportant: 1
     score: 0
     answers:
@@ -4467,16 +4825,19 @@ MonoBehaviour:
       action:
         m_PersistentCalls:
           m_Calls: []
+      isAsk: 0
       suspicion: -5
     - answer: "Oh, I didn\u2019t know about it.  "
       action:
         m_PersistentCalls:
           m_Calls: []
+      isAsk: 0
       suspicion: 20
     - answer: 'I heard from a friend about her murder and then saw it on the television. '
       action:
         m_PersistentCalls:
           m_Calls: []
+      isAsk: 0
       suspicion: -10
   - question: "Well, we\u2019ve learned that the incident occurred shortly after
       10:15 pm on October 17th. When our investigators arrived at the scene, it was
@@ -4490,6 +4851,7 @@ MonoBehaviour:
       action:
         m_PersistentCalls:
           m_Calls: []
+      isAsk: 0
       suspicion: 0
   - question: Of course. I have the police report here. Would you like to see it?
     isImportant: 1
@@ -4499,11 +4861,13 @@ MonoBehaviour:
       action:
         m_PersistentCalls:
           m_Calls: []
+      isAsk: 0
       suspicion: -5
     - answer: "No, that\u2019s okay"
       action:
         m_PersistentCalls:
           m_Calls: []
+      isAsk: 0
       suspicion: 20
   buttonList:
   - {fileID: 618196109}
@@ -4512,6 +4876,7 @@ MonoBehaviour:
   progression: 0
   suspicionMeter: 50
   worryMeter: 0
+  dq: {fileID: 298222020}
 --- !u!225 &1596634230
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -4586,7 +4951,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 200, y: 100}
+  m_SizeDelta: {x: 700, y: 100}
   m_Pivot: {x: 0.5, y: 2.5}
 --- !u!114 &1597698306
 MonoBehaviour:
@@ -4606,7 +4971,7 @@ MonoBehaviour:
     m_Top: 0
     m_Bottom: 0
   m_ChildAlignment: 0
-  m_Spacing: 0
+  m_Spacing: 10
   m_ChildForceExpandWidth: 1
   m_ChildForceExpandHeight: 1
   m_ChildControlWidth: 1
@@ -4660,7 +5025,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -4935,10 +5300,10 @@ RectTransform:
   - {fileID: 977966268}
   m_Father: {fileID: 319333125}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: -776, y: -392}
+  m_SizeDelta: {x: 82, y: 90}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1700661262
 MonoBehaviour:
@@ -5120,7 +5485,11 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: a9e73a39b0080fe4eaa676bdce04f530, type: 3}
   m_PlayOnAwake: 1
+<<<<<<< Updated upstream
   m_Volume: 0.25
+=======
+  m_Volume: 0.125
+>>>>>>> Stashed changes
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -5219,6 +5588,109 @@ Transform:
   m_Children: []
   m_Father: {fileID: 254843160}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2071152787
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2071152788}
+  - component: {fileID: 2071152789}
+  - component: {fileID: 2071152790}
+  m_Layer: 5
+  m_Name: Slider
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &2071152788
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2071152787}
+  m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 0}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1443354057}
+  - {fileID: 1443175607}
+  - {fileID: 91030565}
+  m_Father: {fileID: 319333125}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 160, y: 20}
+  m_Pivot: {x: 0.5, y: -15}
+--- !u!114 &2071152789
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2071152787}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 800035536}
+  m_FillRect: {fileID: 146734435}
+  m_HandleRect: {fileID: 800035535}
+  m_Direction: 0
+  m_MinValue: 0
+  m_MaxValue: 1
+  m_WholeNumbers: 0
+  m_Value: 0
+  m_OnValueChanged:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &2071152790
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2071152787}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 365ae8b2baa41c143a6d290bfcaa68ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &3403997021897865773
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5325,8 +5797,8 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 1299398025}
-  - {fileID: 1508465278}
   - {fileID: 319333125}
+  - {fileID: 1508465278}
   - {fileID: 963194228}
   - {fileID: 1654757011}
   - {fileID: 484843169}

@@ -30,12 +30,12 @@ public class MH_Enviroment : MonoBehaviour
         RenderSettings.ambientLight = new Color((range-50)/100,0.0624f,0.0849f);
         if(range > startBreathing){
             audio.playClip(clip1,0,0.2f,true);
-            audio.playClip(clip2,1,0.2f,true);
+           // audio.playClip(clip2,1,0.2f,true);
         }
       }else{
         audio.getAudioSource(0).loop = false;
         audio.endAudio(0);
-        audio.endAudio(1);
+        //audio.endAudio(1);
         firstColor.r = 0.2f;
         RenderSettings.ambientLight = new Color(0.0460f,0.0642f,0.0849f);
       }
@@ -45,6 +45,7 @@ public class MH_Enviroment : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+          audio.playClip(clip2,1,0.2f,true);
     firstColor = GetComponent<Light>().color;  
     }
 

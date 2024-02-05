@@ -22,6 +22,7 @@ public class MH_Responses : MonoBehaviour
         [TextAreaAttribute]
         public string answer;
         public UnityEvent action;
+        public bool isAsk;
         public float suspicion;
     }
   
@@ -54,7 +55,13 @@ public class MH_Responses : MonoBehaviour
             //loops to plaster the answers on the buttons 
             textObj.GetComponent<Text>().text = obj.question;
             for(int i = 0; i < obj.answers.Count; i++){
+              
                 buttonList[i].transform.GetChild(0).GetComponent<Text>().text = obj.answers[i].answer;
+                if(obj.answers[i].isAsk){
+                    Debug.Log(i);
+                   buttonList[i].GetComponent<Button>().onClick.RemoveAllListeners();
+                   buttonList[i].GetComponent<Button>().onClick.AddListener(delegate{obj.answers[3].action.Invoke();});
+                }
             }
             StartCoroutine(scareMeter());
         }
@@ -75,7 +82,7 @@ public class MH_Responses : MonoBehaviour
         GameObject o = EventSystem.current.currentSelectedGameObject;
         string name = o.transform.GetChild(0).GetComponent<Text>().text;
        //determines whether a name similar to that of the buttons 
-        answerObj results = (name != "" || name != null) ? obj.answers.Single(s => s.answer == name): null;
+        answerObj results = (name != "" && name != null) ? obj.answers.Single(s => s.answer == name): null;
         //minus the suspicion based on the suspicion value of the question
         if(results != null && progression < list.Count){
            suspicionMeter = suspicionMeter + results.suspicion;
