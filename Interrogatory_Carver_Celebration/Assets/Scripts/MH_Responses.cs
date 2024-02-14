@@ -22,7 +22,7 @@ public class MH_Responses : MonoBehaviour
         [TextAreaAttribute]
         public string answer;
         public UnityEvent action;
-        public bool isAsk;
+        public bool isAsk, isDisable;
         public float suspicion;
     }
   
@@ -55,13 +55,14 @@ public class MH_Responses : MonoBehaviour
             //loops to plaster the answers on the buttons 
             textObj.GetComponent<Text>().text = obj.question;
             for(int i = 0; i < obj.answers.Count; i++){
-              
                 buttonList[i].transform.GetChild(0).GetComponent<Text>().text = obj.answers[i].answer;
                 if(obj.answers[i].isAsk){
-                    Debug.Log(i);
                    buttonList[i].GetComponent<Button>().onClick.RemoveAllListeners();
                    buttonList[i].GetComponent<Button>().onClick.AddListener(delegate{obj.answers[3].action.Invoke();});
                 }
+                 if(obj.answers[i].isDisable)
+                   buttonList[i].SetActive(false);
+                
             }
             StartCoroutine(scareMeter());
         }
