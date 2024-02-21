@@ -19,7 +19,7 @@ public class MH_Enviroment : MonoBehaviour
     private MH_AudioSourcer audio;
 
     [SerializeField]
-    private AudioClip clip, clip1, clip2;
+    private AudioClip clip, clip1, clip2, clip3;
 
     bool isEnd;
 
@@ -45,8 +45,8 @@ public class MH_Enviroment : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-          audio.playClip(clip2,1,0.2f,true);
-    firstColor = GetComponent<Light>().color;  
+      audio.playClip(clip2,1,0.2f,true);
+      firstColor = GetComponent<Light>().color;  
     }
 
     // Update is called once per frame
@@ -54,7 +54,12 @@ public class MH_Enviroment : MonoBehaviour
     {
         if(!isEnd){
             range = Mathf.Lerp(range,response.worryMeter,Time.deltaTime/2f);
-            changeColorScene();  
+            changeColorScene();
+            if(MH_Responses.playChimes){
+              Debug.Log("Play Chimes");
+              //below doesn't work as intended (it doesn't play clip3)
+              audio.playClip(clip3, 2, .75f, true);
+            }
         }
   
     }

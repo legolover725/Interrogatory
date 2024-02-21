@@ -34,6 +34,7 @@ public class RG_Polygraph : MonoBehaviour
     {
         time += Time.deltaTime;
         if(time >= interval){
+            a += (GameObject.Find("PanelUI").GetComponent<MH_Responses>().worryMeter - a);
         //     seconds++;
             // // increases and decreases interval in between a floor and ceiling value (separate from worry meter)
             // if(a < ceiling && a > floor && !reverse){
@@ -60,10 +61,10 @@ public class RG_Polygraph : MonoBehaviour
             //     rectTransform.transform.Translate(new Vector2(-speed, 0));
             // }
             // Debug.Log("height: " + (rectTransform.transform.position.y-(rectTransform.sizeDelta.y/2)) + " " + rectTransform.transform.position.y + " " + rectTransform.sizeDelta.y/2);
-                graphingPrefab = (GameObject)Instantiate(prefab, new Vector3(rectTransform.transform.position.x, function(GameObject.Find("PanelUI").GetComponent<MH_Responses>().worryMeter) + 44, 55.6f), Quaternion.identity, gameObject.transform.parent);
+                graphingPrefab = (GameObject)Instantiate(prefab, new Vector3(rectTransform.transform.position.x, function(a) + 44, 55.6f), Quaternion.identity, gameObject.transform.parent);
                 graphingPrefab.transform.SetParent(GameObject.Find("Border").GetComponent<Transform>());
             time = 0f;
-            Debug.Log(a);
+            // Debug.Log(a);
         }
     }
 
@@ -76,6 +77,7 @@ public class RG_Polygraph : MonoBehaviour
         // return 4*Mathf.Cos(a*.125f)+1;
         // return Mathf.Pow(a*.03, 3)/3;
         return a*.1f;
+        // return Mathf.Pow((a-50)*.06f, 2);
         // return (2*Mathf.Sin(Mathf.Cos(Mathf.Pow(a*Mathf.Cos(Mathf.Pow(-1*(Mathf.Sin(3*a)), 2)), 2))));
         // return Random.value*3f;
     }

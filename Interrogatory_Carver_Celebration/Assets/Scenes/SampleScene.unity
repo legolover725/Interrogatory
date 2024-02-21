@@ -426,6 +426,134 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 146734434}
   m_CullTransparentMesh: 1
+--- !u!1 &187007705
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 187007706}
+  - component: {fileID: 187007707}
+  m_Layer: 0
+  m_Name: Chimes
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &187007706
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 187007705}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 254843160}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &187007707
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 187007705}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &232881945
 GameObject:
   m_ObjectHideFlags: 0
@@ -719,6 +847,7 @@ Transform:
   - {fileID: 243857133}
   - {fileID: 1645302205}
   - {fileID: 1910410250}
+  - {fileID: 187007706}
   m_Father: {fileID: 963194228}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &282174193
@@ -3417,6 +3546,7 @@ MonoBehaviour:
   audioList:
   - {fileID: 963194233}
   - {fileID: 1910410249}
+  - {fileID: 187007707}
   backgroundAudio:
   - {fileID: 0}
   backgroundClip:
@@ -4584,6 +4714,7 @@ MonoBehaviour:
   clip: {fileID: 8300000, guid: ffafbeb93e46186489c04765136162d5, type: 3}
   clip1: {fileID: 8300000, guid: 35ec7cc45e0cc67419c68a2f3a96a4ca, type: 3}
   clip2: {fileID: 8300000, guid: a9e73a39b0080fe4eaa676bdce04f530, type: 3}
+  clip3: {fileID: 8300000, guid: 257e9362488374904abefc76a19e64b9, type: 3}
 --- !u!1 &1443175606
 GameObject:
   m_ObjectHideFlags: 0
@@ -4834,8 +4965,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   list:
-  - question: 'Good evening, ryan gensler, my name is Officer Charles Berkley; thank
-      you for coming today regarding the murder of Alex Brown on October 17th, 2009.  '
+  - question: 'Good evening. My name is Officer Charles Berkley; thank you for coming
+      today to investigate the death of Alex Brown on October 17th, 2009.  '
     isImportant: 0
     score: 0
     answers:
@@ -4847,8 +4978,8 @@ MonoBehaviour:
       isDisable: 0
       suspicion: 0
   - question: "Alright, I\u2019m just going to ask you a series of questions about
-      the murder. As you know, this incident happened a few weeks ago, and we\u2019re
-      just trying to gather information from all the people Alex used to know. It\u2019s
+      the murder. As you know, this incident happened a few weeks ago, and we\u2019re 
+      trying to gather information from all the people Alex used to know. It\u2019s
       my understanding that you are an ex-partner of Ms. Brown?"
     isImportant: 0
     score: 0
@@ -5003,8 +5134,8 @@ MonoBehaviour:
       isAsk: 0
       isDisable: 0
       suspicion: 0
-  - question: No problem. ryan, are you aware of the murder of Ms. Brown? Has anyone
-      told you any information about the murder?
+  - question: No problem. Are you aware of the murder of Ms. Brown? Has anyone told
+      you any information about the murder?
     isImportant: 1
     score: 0
     answers:
@@ -5017,7 +5148,7 @@ MonoBehaviour:
       isAsk: 0
       isDisable: 0
       suspicion: -5
-    - answer: "Oh, I didn\u2019t know about it.  "
+    - answer: "Oh, I didn\u2019t know about it until you just told me."
       action:
         m_PersistentCalls:
           m_Calls: []

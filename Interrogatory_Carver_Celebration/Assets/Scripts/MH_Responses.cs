@@ -45,9 +45,11 @@ public class MH_Responses : MonoBehaviour
     private MH_ButtonSpawner b;
 
     questionList obj;
+
+    //determine if chimes theme should be played
+    public static bool playChimes = false;
  
     public void assignValue(){
-        
          if(progression < list.Count){
             FadeChoice(cg,1);
             obj = list[progression];
@@ -63,6 +65,10 @@ public class MH_Responses : MonoBehaviour
                  if(obj.answers[i].isDisable)
                    buttonList[i].SetActive(false);
                 
+            }
+            //chimes theme should be played if an important question has been reached
+            if(obj.isImportant){
+                playChimes = true;
             }
             StartCoroutine(scareMeter());
         }
