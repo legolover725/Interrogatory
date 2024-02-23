@@ -5195,6 +5195,24 @@ MonoBehaviour:
       isAsk: 0
       isDisable: 0
       suspicion: 20
+  - question: Of course. I have the police report here. Would you like to see it?
+    isImportant: 1
+    score: 0
+    answers:
+    - answer: Yes, thank you.
+      action:
+        m_PersistentCalls:
+          m_Calls: []
+      isAsk: 0
+      isDisable: 0
+      suspicion: -5
+    - answer: "No, that\u2019s okay"
+      action:
+        m_PersistentCalls:
+          m_Calls: []
+      isAsk: 0
+      isDisable: 0
+      suspicion: 20
   buttonList:
   - {fileID: 618196109}
   - {fileID: 447686591}
