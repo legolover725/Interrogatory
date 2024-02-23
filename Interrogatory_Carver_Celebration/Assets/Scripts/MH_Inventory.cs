@@ -43,7 +43,7 @@ public class MH_Inventory : MonoBehaviour
 
         Vector3 p = new Vector3(Input.mouseScrollDelta.y,Input.mouseScrollDelta.y, Input.mouseScrollDelta.y);
             if(image.GetComponent<RectTransform>().localScale.y > 1 || Input.mouseScrollDelta.y > 0){
-            image.GetComponent<RectTransform>().localScale += p;
+            image.GetComponent<RectTransform>().localScale += p * 7 * Time.deltaTime ;
             }
             
         
