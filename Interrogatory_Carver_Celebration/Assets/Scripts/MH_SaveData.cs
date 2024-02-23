@@ -10,16 +10,17 @@ public class MH_SaveData : MonoBehaviour
     private bool needsDestroyed = false;
     
     public class gameState{
-        public int p1, p2;
+        public int p1, p2, p3;
         public float s;
         public float[] scoreSystem;
-        public List<Sprite> e = new List<Sprite>();
+        public List<MH_Inventory.MH_Image> e = new List<MH_Inventory.MH_Image>();
        
         public gameState(MH_Responses r, MH_Timeline t,MH_Inventory inv){
             p1 = r.progression;
             s = r.suspicionMeter;
             p2 = t.progression;
             e = inv.evidence;
+
             scoreSystem = new float[r.list.Count];
             for(int i = 0; i < scoreSystem.Length; i++){
                 scoreSystem[i] = r.list[i].score;
