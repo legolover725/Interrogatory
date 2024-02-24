@@ -13,7 +13,7 @@ public class MH_Timeline : MonoBehaviour
     public class scene {
         public string name;
         public UnityEvent action;
-        public bool needsInput;
+        public bool needsInput, isObj;
         public UnityEvent fadeOut;
         public AudioClip recording;
         public float time;
@@ -46,8 +46,9 @@ public class MH_Timeline : MonoBehaviour
                 yield return new WaitUntil(() => inputDetected);
                 inputDetected = false;
  
-            if(GameObject.FindGameObjectWithTag(buttonTagName) != null)
-                Debug.Log("cup exists");
+            if(GameObject.FindGameObjectWithTag(buttonTagName) != null && scenes[currentScene].isObj){
+                yield return new WaitUntil(() => pressObj());
+            }
            
                 yield return new WaitForSeconds(scenes[currentScene].time);
 
@@ -74,6 +75,19 @@ public class MH_Timeline : MonoBehaviour
         isEnd = true;
     }
 
+    public bool pressObj(){
+       RaycastHit hit; 
+       bool b = false;
+       Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        if(Physics.Raycast(ray, out hit, Mathf.Infinity)){
+            if(hit.collider.gameObject.tag == "Choice"){
+                b = true;
+            }
+        }
+        return b;
+    }
+
+
     public void restartGame(){
         Destroy(GameObject.Find("gameData"));
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
@@ -81,6 +95,7 @@ public class MH_Timeline : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        pressObj();
         if(start == false){
        StartCoroutine(gameState());  
           start = true;
