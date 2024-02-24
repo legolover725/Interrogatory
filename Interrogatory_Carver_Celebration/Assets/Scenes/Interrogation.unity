@@ -2809,6 +2809,74 @@ MonoBehaviour:
           m_CallState: 2
     recording: {fileID: 0}
     time: 0.25
+  - name: question
+    action:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1596634229}
+          m_TargetAssemblyTypeName: MH_Responses, Assembly-CSharp
+          m_MethodName: assignValue
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    needsInput: 1
+    fadeOut:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1596634229}
+          m_TargetAssemblyTypeName: MH_Responses, Assembly-CSharp
+          m_MethodName: minusSuspicion
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    recording: {fileID: 0}
+    time: 0.25
+  - name: question
+    action:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1596634229}
+          m_TargetAssemblyTypeName: MH_Responses, Assembly-CSharp
+          m_MethodName: assignValue
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    needsInput: 1
+    fadeOut:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1596634229}
+          m_TargetAssemblyTypeName: MH_Responses, Assembly-CSharp
+          m_MethodName: minusSuspicion
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    recording: {fileID: 0}
+    time: 0.25
   - name: end
     action:
       m_PersistentCalls:
@@ -4991,6 +5059,36 @@ MonoBehaviour:
       isAsk: 0
       isDisable: 0
       suspicion: 0
+  - question: Would you like a sip of water?
+    isImportant: 0
+    score: 0
+    answers:
+    - answer: 'Sure, thank you. '
+      action:
+        m_PersistentCalls:
+          m_Calls:
+          - m_Target: {fileID: 1654757012}
+            m_TargetAssemblyTypeName: MH_Cup, Assembly-CSharp
+            m_MethodName: spawnCup
+            m_Mode: 1
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: 
+              m_BoolArgument: 0
+            m_CallState: 2
+      isAsk: 0
+      isDisable: 0
+      suspicion: 0
+    - answer: "No, I\u2019m okay, thank you."
+      action:
+        m_PersistentCalls:
+          m_Calls: []
+      isAsk: 0
+      isDisable: 0
+      suspicion: 0
   - question: Alright, and may I ask, how did you meet Ms. Brown?
     isImportant: 1
     score: 0
@@ -5104,36 +5202,6 @@ MonoBehaviour:
       isAsk: 0
       isDisable: 0
       suspicion: -15
-  - question: Good to hear. Would you like a sip of water?
-    isImportant: 0
-    score: 0
-    answers:
-    - answer: 'Sure, thank you. '
-      action:
-        m_PersistentCalls:
-          m_Calls:
-          - m_Target: {fileID: 1654757012}
-            m_TargetAssemblyTypeName: MH_Cup, Assembly-CSharp
-            m_MethodName: spawnCup
-            m_Mode: 1
-            m_Arguments:
-              m_ObjectArgument: {fileID: 0}
-              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-              m_IntArgument: 0
-              m_FloatArgument: 0
-              m_StringArgument: 
-              m_BoolArgument: 0
-            m_CallState: 2
-      isAsk: 0
-      isDisable: 0
-      suspicion: 0
-    - answer: "No, I\u2019m okay, thank you."
-      action:
-        m_PersistentCalls:
-          m_Calls: []
-      isAsk: 0
-      isDisable: 0
-      suspicion: 0
   - question: No problem. Are you aware of the murder of Ms. Brown? Has anyone told
       you any information about the murder?
     isImportant: 1
@@ -5195,24 +5263,57 @@ MonoBehaviour:
       isAsk: 0
       isDisable: 0
       suspicion: 20
-  - question: Of course. I have the police report here. Would you like to see it?
+  - question: Do you know of a Skylar Greenwood?
     isImportant: 1
     score: 0
     answers:
-    - answer: Yes, thank you.
+    - answer: 'I think I may have met her at a party a while back. '
       action:
         m_PersistentCalls:
           m_Calls: []
       isAsk: 0
       isDisable: 0
-      suspicion: -5
-    - answer: "No, that\u2019s okay"
+      suspicion: 5
+    - answer: 'Not that I can recall. '
+      action:
+        m_PersistentCalls:
+          m_Calls: []
+      isAsk: 0
+      isDisable: 0
+      suspicion: -10
+    - answer: 'I was calling a friend until past 12. '
+      action:
+        m_PersistentCalls:
+          m_Calls: []
+      isAsk: 0
+      isDisable: 0
+      suspicion: -15
+  - question: Is there anyone I can verify that with?
+    isImportant: 1
+    score: 0
+    answers:
+    - answer: 'Yeah, my friend. I can give you some contact information if you need
+        it. '
+      action:
+        m_PersistentCalls:
+          m_Calls: []
+      isAsk: 0
+      isDisable: 0
+      suspicion: -15
+    - answer: 'I was out solo, by myself.  '
       action:
         m_PersistentCalls:
           m_Calls: []
       isAsk: 0
       isDisable: 0
       suspicion: 20
+    - answer: 'That I have a bad memory? Maybe a doctor. '
+      action:
+        m_PersistentCalls:
+          m_Calls: []
+      isAsk: 0
+      isDisable: 0
+      suspicion: 5
   buttonList:
   - {fileID: 618196109}
   - {fileID: 447686591}
