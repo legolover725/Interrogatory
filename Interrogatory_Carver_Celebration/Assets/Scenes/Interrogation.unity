@@ -5097,6 +5097,7 @@ MonoBehaviour:
       today to investigate the death of Alex Brown on October 17th, 2009.  '
     isImportant: 0
     score: 0
+    trigger: 
     answers:
     - answer: Pleasure to be here.
       action:
@@ -5111,6 +5112,7 @@ MonoBehaviour:
       my understanding that you are an ex-partner of Ms. Brown?"
     isImportant: 0
     score: 0
+    trigger: 
     answers:
     - answer: Yes, I am.
       action:
@@ -5122,6 +5124,7 @@ MonoBehaviour:
   - question: Would you like a sip of water?
     isImportant: 0
     score: 0
+    trigger: 
     answers:
     - answer: 'Sure, thank you. '
       action:
@@ -5152,6 +5155,7 @@ MonoBehaviour:
   - question: Alright, and may I ask, how did you meet Ms. Brown?
     isImportant: 1
     score: 0
+    trigger: 
     answers:
     - answer: 'We used to go to grade school together. '
       action:
@@ -5196,6 +5200,7 @@ MonoBehaviour:
   - question: I see. When did you and Ms. Brown first start dating?
     isImportant: 1
     score: 0
+    trigger: 
     answers:
     - answer: We were high school sweethearts for a while, you know, before the breakup
       action:
@@ -5221,6 +5226,7 @@ MonoBehaviour:
   - question: And when did you two split up?
     isImportant: 1
     score: 0
+    trigger: 
     answers:
     - answer: 'A few months ago. '
       action:
@@ -5239,6 +5245,7 @@ MonoBehaviour:
   - question: "I see\u2026 and how would you rate your relationship with Ms. Brown?"
     isImportant: 1
     score: 0
+    trigger: 
     answers:
     - answer: 'It was great; we both loved each other dearly. I do miss her. Whoever
         has done this needs to be caught. '
@@ -5266,6 +5273,7 @@ MonoBehaviour:
       you any information about the murder?
     isImportant: 1
     score: 0
+    trigger: chimesTheme
     answers:
     - answer: "No, I wasn\u2019t told anything. I found out about her death when
         it was first aired on television. I was devastated\u2026 and couldn\u2019t
@@ -5297,6 +5305,7 @@ MonoBehaviour:
       Brown\u2019s home"
     isImportant: 0
     score: 0
+    trigger: 
     answers:
     - answer: Wow, that is a lot to take in.
       action:
@@ -5308,6 +5317,7 @@ MonoBehaviour:
   - question: Of course. I have the police report here. Would you like to see it?
     isImportant: 1
     score: 0
+    trigger: 
     answers:
     - answer: Yes, thank you.
       action:
@@ -5326,6 +5336,7 @@ MonoBehaviour:
   - question: Do you know of a Skylar Greenwood?
     isImportant: 1
     score: 0
+    trigger: 
     answers:
     - answer: 'I think I may have met her at a party a while back. '
       action:
@@ -5351,6 +5362,7 @@ MonoBehaviour:
   - question: Is there anyone I can verify that with?
     isImportant: 1
     score: 0
+    trigger: 
     answers:
     - answer: 'Yeah, my friend. I can give you some contact information if you need
         it. '
