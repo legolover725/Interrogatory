@@ -15,6 +15,8 @@ public class MH_Responses : MonoBehaviour
         public string question;
         public bool isImportant;
         public float score;
+        //trigger/que for game (music, animation, etc) if question is reached
+        public string trigger;
         public List<answerObj> answers = new List<answerObj>();
     }
     [Serializable]
@@ -67,7 +69,7 @@ public class MH_Responses : MonoBehaviour
                 
             }
             //chimes theme should be played if an important question has been reached
-            if(obj.isImportant){
+            if(obj.trigger == "chimesTheme"){
                 playChimes = true;
             }
             StartCoroutine(scareMeter());
