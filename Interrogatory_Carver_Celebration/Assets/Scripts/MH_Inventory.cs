@@ -12,11 +12,17 @@ public class MH_Inventory : MonoBehaviour
     public class MH_Image{
         public Sprite s; 
         public UnityEvent ue;
+
+        public MH_Image(Sprite s, UnityEvent ue){
+            this.s = s;
+            this.ue = ue;
+        }
     }
 
     [SerializeField]
     private GameObject image;
-
+    [SerializeField]
+    private Sprite report;
     int i = 0;
     public void add(){
          i = (i >= 0 && i < evidence.Count -1) ? i+=1 : 0;
@@ -43,16 +49,21 @@ public class MH_Inventory : MonoBehaviour
 
         Vector3 p = new Vector3(Input.mouseScrollDelta.y,Input.mouseScrollDelta.y, Input.mouseScrollDelta.y);
             if(image.GetComponent<RectTransform>().localScale.y > 1 || Input.mouseScrollDelta.y > 0){
-            image.GetComponent<RectTransform>().localScale += p * 7 * Time.deltaTime ;
+            image.GetComponent<RectTransform>().localScale += p * 15 * Time.deltaTime ;
             }
             
         
         //image.GetComponent<RectTransform>().position = Input.mouseScrollDelta;
     }
+
+    public void addReport(){
+        evidence.Add(new MH_Image(report,null));
+    }
     // Start is called before the first frame update
     void Start()
     {
         switcher(i);
+        addReport();
     }
 
     // Update is called once per frame
