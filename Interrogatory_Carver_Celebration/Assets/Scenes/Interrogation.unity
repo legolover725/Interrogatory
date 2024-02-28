@@ -2042,7 +2042,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &709312521
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5269,7 +5269,7 @@ MonoBehaviour:
       isAsk: 0
       isDisable: 0
       suspicion: -15
-  - question: No problem. Are you aware of the murder of Ms. Brown? Has anyone told
+  - question: No problem. Were you aware of the murder of Ms. Brown? Has anyone told
       you any information about the murder?
     isImportant: 1
     score: 0

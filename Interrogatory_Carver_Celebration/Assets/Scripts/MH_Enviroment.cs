@@ -56,7 +56,7 @@ public class MH_Enviroment : MonoBehaviour
             range = Mathf.Lerp(range,response.worryMeter,Time.deltaTime/2f);
             changeColorScene();
             if(MH_Responses.playChimes){
-              audio.playClip(clip3, 2, .75f, true);
+              audio.playClip(clip3,2,0.75f,false);
             }
         }
   
@@ -68,6 +68,7 @@ public class MH_Enviroment : MonoBehaviour
     }
     public IEnumerator endEvent(){
          audio.playClip(clip,0,0.5f,false);
+         audio.playClip(clip3,2,0.1f,false);
          while(audio.getAudioSource(0).isPlaying){
             GetComponent<Light>().color = Color.Lerp(GetComponent<Light>().color,new Color(0.1f,0.1f,0.1f),Time.deltaTime/5f);
             RenderSettings.ambientLight = Color.Lerp(RenderSettings.ambientLight, new Color(0.01f,0.01f,0.01f),Time.deltaTime/5f);
