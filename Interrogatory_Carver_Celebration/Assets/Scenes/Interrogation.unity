@@ -5348,7 +5348,7 @@ MonoBehaviour:
       isAsk: 0
       isDisable: 0
       suspicion: -15
-  - question: No problem. Are you aware of the murder of Ms. Brown? Has anyone told
+  - question: No problem. Were you aware of the murder of Ms. Brown? Has anyone told
       you any information about the murder?
     isImportant: 1
     score: 0
