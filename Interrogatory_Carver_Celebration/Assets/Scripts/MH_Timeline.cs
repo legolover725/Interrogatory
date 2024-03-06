@@ -13,7 +13,8 @@ public class MH_Timeline : MonoBehaviour
     public class scene {
         public string name;
         public UnityEvent action;
-        public bool needsInput, isObj;
+        public bool needsInput, isObj, isScene;
+        public UnityEvent animation;
         public UnityEvent fadeOut;
         public AudioClip recording;
         public float time;
@@ -36,24 +37,26 @@ public class MH_Timeline : MonoBehaviour
    IEnumerator gameState(){
         //iterates scenes until the end, allow for questions to play 
        for(int currentScene = progression; currentScene < scenes.Count -1; currentScene++){
+             
            if(!isEnd){
             obj = scenes[currentScene];
-
+          
             if(scenes[currentScene].action != null)
                 scenes[currentScene].action.Invoke();
-
+            source.playClip(scenes[currentScene].recording,3,0.7f,false);
             if(scenes[currentScene].needsInput)
                 yield return new WaitUntil(() => inputDetected);
                 inputDetected = false;
- 
+            scenes[currentScene].animation.Invoke();
             if(GameObject.FindGameObjectWithTag(buttonTagName) != null && scenes[currentScene].isObj){
                 yield return new WaitUntil(() => pressObj());
             }
-           
                 yield return new WaitForSeconds(scenes[currentScene].time);
+             
 
-                yield return new WaitForSeconds(0.25f);
-                progression = currentScene;
+                   yield return new WaitForSeconds(0.25f);
+                   progression = currentScene;
+                  
            }
         }
         

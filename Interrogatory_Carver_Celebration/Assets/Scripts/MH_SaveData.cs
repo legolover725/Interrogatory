@@ -28,7 +28,7 @@ public class MH_SaveData : MonoBehaviour
         }
 
         public void spreadData(MH_Responses r, MH_Timeline t, MH_Inventory inv){
-            p2 += 2;
+            p2++; //p += 2;
             t.progression = p2;
             r.progression = p1;
             r.suspicionMeter = s;
