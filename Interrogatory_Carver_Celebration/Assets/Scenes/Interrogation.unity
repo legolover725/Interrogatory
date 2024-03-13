@@ -5276,6 +5276,7 @@ MonoBehaviour:
       isAsk: 1
       isDisable: 0
       suspicion: 0
+<<<<<<< Updated upstream
   - question: I see. When did you and Ms. Brown first start dating?
     isImportant: 1
     score: 0
@@ -5350,6 +5351,10 @@ MonoBehaviour:
       suspicion: -15
   - question: No problem. Were you aware of the murder of Ms. Brown? Has anyone told
       you any information about the murder?
+=======
+  - question: Were you aware of the murder of Ms. Brown? Has anyone told you any
+      information about the murder?
+>>>>>>> Stashed changes
     isImportant: 1
     score: 0
     trigger: chimesTheme
