@@ -8,7 +8,6 @@ public class MH_AudioSourcer: MonoBehaviour
     public List<AudioSource> backgroundAudio;
     public List<AudioClip> backgroundClip;
     int intense;
-    public bool mute = false;
 
 
     // c is the audio clip
@@ -16,22 +15,16 @@ public class MH_AudioSourcer: MonoBehaviour
     // v is volume
     // l specifies if an audio clip will be looped
     public void playClip(AudioClip c, int i, float v, bool l){
-        if(!mute){
-            if(audioList[i].clip != c || c == null)
-                if(audioList[i].isPlaying){
-                    StartCoroutine(transitSound(audioList[i],c,v,l));
-                }else{
-                    audioList[i].clip = c;
-                    audioList[i].volume = v;
-                    audioList[i].loop = l;
-                    audioList[i].Play();
-                }
-        }
-        
-    }
-
-    public void changeMuteState(){
-        mute = !mute;
+       
+        if(audioList[i].clip != c || c == null)
+            if(audioList[i].isPlaying){
+                StartCoroutine(transitSound(audioList[i],c,v,l));
+            }else{
+                audioList[i].clip = c;
+                audioList[i].volume = v;
+                audioList[i].loop = l;
+                audioList[i].Play();
+            }
         
     }
 
