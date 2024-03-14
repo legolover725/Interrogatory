@@ -11,39 +11,41 @@ public class MH_AnimatedOfficer : MonoBehaviour
         public AnimationClip animation;
 
         public void playClip(){
+            AnimationClip a = null;
+            if(name.GetComponent<Animation>().clip != animation && name.GetComponent<Animation>().clip != null)
+                a = name.GetComponent<Animation>().clip;
+            
             name.GetComponent<Animation>().Play(animation.name);
+          
+           // name.GetComponent<Animation>().Play(a.name);
         }
+ 
     }
-    public List<AnimationObject> animObjs = new List<AnimationObject>();
+    [Serializable]
+    public class animList{
+        public List<AnimationObject> aList = new List<AnimationObject>();
+    }
+    public List<animList> animObjs = new List<animList>();
     public AnimationObject blink;
     public AnimationObject eyeLoop;
 
     public bool replaced;
 
-    public IEnumerator eyeAnimation(){
-        eyeLoop.playClip();
-         yield return new WaitForSeconds(4.0f);
-         yield return new WaitUntil(() => replaced);
-        StartCoroutine(eyeAnimation());
-        
-    }
+
 
     public void randomAnimation(){
-        AnimationObject ao = animObjs[UnityEngine.Random.Range(0,animObjs.Count)];
-        ao.playClip();
-        StartCoroutine(endClip(ao.animation));
+        animList ao = animObjs[UnityEngine.Random.Range(0,animObjs.Count)];
+        for(int i = 0; i < ao.aList.Count; i++){
+            ao.aList[i].playClip();
+            
+        }
 
     }
-    public IEnumerator endClip(AnimationClip a){
-        replaced = false;
-        yield return new WaitForSeconds(a.length);
-        replaced = true;
-        yield return null;
-    }
+    
     // Start is called before the first frame update
     void Start()
     {
-        StartCoroutine(eyeAnimation());
+       eyeLoop.name.GetComponent<Animation>().Play(eyeLoop.animation.name);
     }
 
     // Update is called once per frame

@@ -602,6 +602,7 @@ Animation:
   serializedVersion: 3
   m_Animation: {fileID: 7400000, guid: bed905f2965c2dc48b5a6205dfc95431, type: 2}
   m_Animations:
+  - {fileID: 7400000, guid: 9adb79e243e05c44dabdbebaad918133, type: 2}
   - {fileID: 7400000, guid: bed905f2965c2dc48b5a6205dfc95431, type: 2}
   m_WrapMode: 0
   m_PlayAutomatically: 1
@@ -2587,6 +2588,9 @@ MonoBehaviour:
     needsInput: 0
     isObj: 0
     isScene: 0
+    animation:
+      m_PersistentCalls:
+        m_Calls: []
     fadeOut:
       m_PersistentCalls:
         m_Calls:
@@ -2623,6 +2627,9 @@ MonoBehaviour:
     needsInput: 0
     isObj: 0
     isScene: 0
+    animation:
+      m_PersistentCalls:
+        m_Calls: []
     fadeOut:
       m_PersistentCalls:
         m_Calls: []
@@ -2647,6 +2654,21 @@ MonoBehaviour:
     needsInput: 1
     isObj: 0
     isScene: 0
+    animation:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 919132147554594058}
+          m_TargetAssemblyTypeName: MH_AnimatedOfficer, Assembly-CSharp
+          m_MethodName: randomAnimation
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
     fadeOut:
       m_PersistentCalls:
         m_Calls:
@@ -2683,6 +2705,9 @@ MonoBehaviour:
     needsInput: 1
     isObj: 0
     isScene: 0
+    animation:
+      m_PersistentCalls:
+        m_Calls: []
     fadeOut:
       m_PersistentCalls:
         m_Calls:
@@ -2719,6 +2744,9 @@ MonoBehaviour:
     needsInput: 1
     isObj: 0
     isScene: 0
+    animation:
+      m_PersistentCalls:
+        m_Calls: []
     fadeOut:
       m_PersistentCalls:
         m_Calls:
@@ -2755,6 +2783,9 @@ MonoBehaviour:
     needsInput: 1
     isObj: 0
     isScene: 0
+    animation:
+      m_PersistentCalls:
+        m_Calls: []
     fadeOut:
       m_PersistentCalls:
         m_Calls:
@@ -2791,6 +2822,9 @@ MonoBehaviour:
     needsInput: 1
     isObj: 0
     isScene: 0
+    animation:
+      m_PersistentCalls:
+        m_Calls: []
     fadeOut:
       m_PersistentCalls:
         m_Calls:
@@ -2827,6 +2861,9 @@ MonoBehaviour:
     needsInput: 1
     isObj: 0
     isScene: 0
+    animation:
+      m_PersistentCalls:
+        m_Calls: []
     fadeOut:
       m_PersistentCalls:
         m_Calls:
@@ -2863,6 +2900,9 @@ MonoBehaviour:
     needsInput: 1
     isObj: 1
     isScene: 0
+    animation:
+      m_PersistentCalls:
+        m_Calls: []
     fadeOut:
       m_PersistentCalls:
         m_Calls:
@@ -2899,6 +2939,9 @@ MonoBehaviour:
     needsInput: 1
     isObj: 0
     isScene: 0
+    animation:
+      m_PersistentCalls:
+        m_Calls: []
     fadeOut:
       m_PersistentCalls:
         m_Calls:
@@ -2935,6 +2978,9 @@ MonoBehaviour:
     needsInput: 1
     isObj: 0
     isScene: 0
+    animation:
+      m_PersistentCalls:
+        m_Calls: []
     fadeOut:
       m_PersistentCalls:
         m_Calls:
@@ -2971,6 +3017,9 @@ MonoBehaviour:
     needsInput: 1
     isObj: 0
     isScene: 0
+    animation:
+      m_PersistentCalls:
+        m_Calls: []
     fadeOut:
       m_PersistentCalls:
         m_Calls:
@@ -3007,6 +3056,9 @@ MonoBehaviour:
     needsInput: 1
     isObj: 0
     isScene: 0
+    animation:
+      m_PersistentCalls:
+        m_Calls: []
     fadeOut:
       m_PersistentCalls:
         m_Calls:
@@ -3043,6 +3095,9 @@ MonoBehaviour:
     needsInput: 1
     isObj: 0
     isScene: 0
+    animation:
+      m_PersistentCalls:
+        m_Calls: []
     fadeOut:
       m_PersistentCalls:
         m_Calls:
@@ -3079,6 +3134,9 @@ MonoBehaviour:
     needsInput: 1
     isObj: 0
     isScene: 0
+    animation:
+      m_PersistentCalls:
+        m_Calls: []
     fadeOut:
       m_PersistentCalls:
         m_Calls:
@@ -3800,6 +3858,7 @@ MonoBehaviour:
   - {fileID: 963194233}
   - {fileID: 1910410249}
   - {fileID: 187007707}
+  - {fileID: 963194234}
   backgroundAudio:
   - {fileID: 0}
   backgroundClip:
@@ -6606,9 +6665,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf5559c180ff2b24992c43e91281a5ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animObjs:
+  - aList:
+    - name: {fileID: 201594733}
+      animation: {fileID: 0}
+  - aList:
+    - name: {fileID: 201594733}
+      animation: {fileID: 0}
+  blink:
+    name: {fileID: 1944300545}
+    animation: {fileID: 7400000, guid: d0972e9aea987da46acf495c207c3791, type: 2}
   eyeLoop:
-    name: {fileID: 0}
-    animation: {fileID: 0}
+    name: {fileID: 1944300545}
+    animation: {fileID: 7400000, guid: d0972e9aea987da46acf495c207c3791, type: 2}
+  replaced: 0
 --- !u!1 &919132147708106859
 GameObject:
   m_ObjectHideFlags: 0
@@ -6837,6 +6907,7 @@ GameObject:
   - component: {fileID: 4931218027875398764}
   - component: {fileID: 4876933051805290095}
   - component: {fileID: 1305037035488080514}
+  - component: {fileID: 4931218027875398765}
   m_Layer: 0
   m_Name: Plane
   m_TagString: Untagged
@@ -7266,6 +7337,22 @@ Transform:
   m_Children: []
   m_Father: {fileID: 201594734}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!111 &4931218027875398765
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2193423312781462818}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 0}
+  m_Animations:
+  - {fileID: 7400000, guid: 1250cd61abe03274ca9d9ac8c97206c2, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!4 &5021228345913820284
 Transform:
   m_ObjectHideFlags: 0
