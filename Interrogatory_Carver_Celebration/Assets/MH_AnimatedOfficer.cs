@@ -9,14 +9,13 @@ public class MH_AnimatedOfficer : MonoBehaviour
     public class AnimationObject{
         public GameObject name;
         public AnimationClip animation;
+       
+
 
         public void playClip(){
-            AnimationClip a = null;
-            if(name.GetComponent<Animation>().clip != animation && name.GetComponent<Animation>().clip != null)
-                a = name.GetComponent<Animation>().clip;
-            
-            name.GetComponent<Animation>().Play(animation.name);
           
+            name.GetComponent<Animation>().Play(animation.name);
+            
            // name.GetComponent<Animation>().Play(a.name);
         }
  
@@ -26,18 +25,27 @@ public class MH_AnimatedOfficer : MonoBehaviour
         public List<AnimationObject> aList = new List<AnimationObject>();
     }
     public List<animList> animObjs = new List<animList>();
-    public AnimationObject blink;
+    public AnimationObject talk;
     public AnimationObject eyeLoop;
+    public AudioSource source;
+    public bool replaced = false;
 
-    public bool replaced;
-
-
+    public IEnumerator play(AnimationClip a1,AnimationClip a2, GameObject name){
+        replaced = true;
+        yield return new WaitForSeconds(a1.length);
+        replaced = false;
+        if(a2 != null)
+        name.GetComponent<Animation>().Play(a2.name);
+    }
 
     public void randomAnimation(){
         animList ao = animObjs[UnityEngine.Random.Range(0,animObjs.Count)];
         for(int i = 0; i < ao.aList.Count; i++){
+              AnimationClip a = null;
+            if(ao.aList[i].name.GetComponent<Animation>().clip != ao.aList[i].animation && ao.aList[i].name.GetComponent<Animation>().clip != null)
+                a = ao.aList[i].name.GetComponent<Animation>().clip;
             ao.aList[i].playClip();
-            
+            StartCoroutine(play(ao.aList[i].animation, a, ao.aList[i].name));  
         }
 
     }
@@ -51,6 +59,8 @@ public class MH_AnimatedOfficer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if(source.isPlaying && replaced == false){
+            talk.name.GetComponent<Animation>().Play(talk.animation.name);
+        }
     }
 }
