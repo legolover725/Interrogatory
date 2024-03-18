@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 
-public class MH_AnimatedOfficer : MonoBehaviour
+public class MH_Animatedeer : MonoBehaviour
 {
    [Serializable]
     public class AnimationObject{
