@@ -31,6 +31,9 @@ public class MH_SwitchCamera : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+         if(i%2 == 1){
+            p.GetComponent<MH_Responses>().FadeChoice(p.GetComponent<CanvasGroup>(),0);
+         }
         if(Input.GetKeyDown("i")){
             i++;
             if(i%2 == 1){
