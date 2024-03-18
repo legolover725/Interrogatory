@@ -43,7 +43,7 @@ public class MH_Timeline : MonoBehaviour
           
             if(scenes[currentScene].action != null)
                 scenes[currentScene].action.Invoke();
-            source.playClip(scenes[currentScene].recording,3,0.7f,false);
+            // source.playClip(scenes[currentScene].recording,3,0.7f,false);
             if(scenes[currentScene].needsInput)
                 yield return new WaitUntil(() => inputDetected);
                 inputDetected = false;
@@ -61,6 +61,7 @@ public class MH_Timeline : MonoBehaviour
         }
         
         scenes[scenes.Count - 1].action.Invoke();
+        Debug.Log(source.getAudioSource(0).isPlaying);
         yield return new WaitUntil(() => !source.getAudioSource(0).isPlaying);
         source.playClip(scenes[scenes.Count - 1].recording,0,0.7f,false);
         yield return new WaitForSeconds(scenes[scenes.Count - 1].time);
