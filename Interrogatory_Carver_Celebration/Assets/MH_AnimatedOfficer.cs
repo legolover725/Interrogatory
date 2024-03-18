@@ -59,8 +59,8 @@ public class MH_AnimatedOfficer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(source.isPlaying && replaced == false){
-            talk.name.GetComponent<Animation>().Play(talk.animation.name);
-        }
+        //if(source.clip != null && source.isPlaying && replaced == false){
+          //  talk.name.GetComponent<Animation>().Play(talk.animation.name);
+       // }
     }
 }
