@@ -29,7 +29,7 @@ public class RG_videoMechanics : MonoBehaviour
 
     //loads interrogation scene to skip video
     public void skipVid(){
-        SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene("Interrogation");
     }
 
     //used to reverse the play-state of the video

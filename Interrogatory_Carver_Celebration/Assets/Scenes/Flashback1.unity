@@ -231,7 +231,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sd: {fileID: 0}
-  t: SampleScene
+  t: Interrogation
   duration: 90
 --- !u!114 &56230946
 MonoBehaviour:
