@@ -2495,8 +2495,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 160, y: 100}
+  m_AnchoredPosition: {x: 2.6360016, y: 15.599998}
+  m_SizeDelta: {x: 199.03, y: 82}
   m_Pivot: {x: 0.5, y: 0.8}
 --- !u!114 &809061070
 MonoBehaviour:
@@ -2519,7 +2519,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 33b85b99ead7d47b090f915ed9f9f57b, type: 3}
     m_FontSize: 18
     m_FontStyle: 0
     m_BestFit: 0
@@ -2609,7 +2609,7 @@ MonoBehaviour:
           m_CallState: 2
     recording: {fileID: 0}
     time: 90
-  - name: Beggining scene
+  - name: Beginning scene
     action:
       m_PersistentCalls:
         m_Calls:
@@ -2636,7 +2636,7 @@ MonoBehaviour:
         m_Calls: []
     recording: {fileID: 0}
     time: 6
-  - name: question
+  - name: into1 ("Good evening...October 17th, 2009")
     action:
       m_PersistentCalls:
         m_Calls:
@@ -2687,7 +2687,7 @@ MonoBehaviour:
           m_CallState: 2
     recording: {fileID: 8300000, guid: 74d069f44f0be4dfe9c2c8cb8c7e2e47, type: 3}
     time: 0.25
-  - name: question
+  - name: intro2("Alright, I'm just going...of Ms. Brown?")
     action:
       m_PersistentCalls:
         m_Calls:
@@ -2736,9 +2736,9 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-    recording: {fileID: 0}
+    recording: {fileID: 8300000, guid: 7f5ef3002750c4bb08352ac0bb909c0e, type: 3}
     time: 0.25
-  - name: question
+  - name: water
     action:
       m_PersistentCalls:
         m_Calls:
@@ -2787,9 +2787,9 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-    recording: {fileID: 0}
+    recording: {fileID: 8300000, guid: 163cf8ed9d55b4e65badf941dcca1a0a, type: 3}
     time: 0.25
-  - name: question
+  - name: question1(meet Ms. Brown)
     action:
       m_PersistentCalls:
         m_Calls:
@@ -2838,9 +2838,9 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-    recording: {fileID: 0}
+    recording: {fileID: 8300000, guid: 0931dc8572a91498c88b8cb5c2435ead, type: 3}
     time: 0.25
-  - name: question
+  - name: question2("Has anyone told...the murder?")
     action:
       m_PersistentCalls:
         m_Calls:
@@ -2889,9 +2889,9 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-    recording: {fileID: 0}
+    recording: {fileID: 8300000, guid: 9c2089ca00bae4c0095de734a764c1d6, type: 3}
     time: 0.25
-  - name: question
+  - name: info1("Well, we've learned...Ms. Brown's home")
     action:
       m_PersistentCalls:
         m_Calls:
@@ -2940,9 +2940,9 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-    recording: {fileID: 0}
+    recording: {fileID: 8300000, guid: 1b6130ee1e61048b5b4c9615a3a05886, type: 3}
     time: 0.25
-  - name: question
+  - name: response1("Yes, that is correct")
     action:
       m_PersistentCalls:
         m_Calls:
@@ -2979,9 +2979,9 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-    recording: {fileID: 0}
+    recording: {fileID: 8300000, guid: 13b1b4ce2559a45058490be680c30bc0, type: 3}
     time: 0.25
-  - name: question
+  - name: question3(contact with Ms. Brown)
     action:
       m_PersistentCalls:
         m_Calls:
@@ -3018,9 +3018,9 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-    recording: {fileID: 0}
+    recording: {fileID: 8300000, guid: 48fd95859179d4d8eb49e99bd890dbc3, type: 3}
     time: 0.25
-  - name: question
+  - name: question4(I have the police...see it?)
     action:
       m_PersistentCalls:
         m_Calls:
@@ -3057,9 +3057,9 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-    recording: {fileID: 0}
+    recording: {fileID: 8300000, guid: 003b88a0f2e6942b3ab94359d2d34234, type: 3}
     time: 0.25
-  - name: question
+  - name: question5("Do you...named Skylar?")
     action:
       m_PersistentCalls:
         m_Calls:
@@ -3096,9 +3096,9 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-    recording: {fileID: 0}
+    recording: {fileID: 8300000, guid: 94fec1c7d78a743e3b0920ecbcff8983, type: 3}
     time: 0.25
-  - name: question
+  - name: question6("Skylar Greenwood...closest Friend")
     action:
       m_PersistentCalls:
         m_Calls:
@@ -3135,9 +3135,9 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-    recording: {fileID: 0}
+    recording: {fileID: 8300000, guid: 40e22116d51f44c0da744bc600d49003, type: 3}
     time: 0.25
-  - name: question
+  - name: question7("Ms. Brown was killed...on that night?")
     action:
       m_PersistentCalls:
         m_Calls:
@@ -3174,7 +3174,7 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-    recording: {fileID: 0}
+    recording: {fileID: 8300000, guid: e10a3df3d0f834d8e95af79fb763a9e9, type: 3}
     time: 0.25
   - name: end
     action:
@@ -5425,7 +5425,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   list:
   - question: 'Good evening. My name is Officer Charles Berkley; thank you for coming
-      today to investigate the death of Alex Brown on October 17th, 2009.  '
+      today regarding the death of Alex Brown on October 17th, 2009.  '
     isImportant: 0
     score: 0
     trigger: 
@@ -5528,7 +5528,7 @@ MonoBehaviour:
       isAsk: 1
       isDisable: 0
       suspicion: 0
-  - question: Has anyone told you any information about the murder of Ms. Brown?
+  - question: Has anyone told you any information about the murder?
     isImportant: 1
     score: 0
     trigger: chimesTheme
@@ -5572,10 +5572,48 @@ MonoBehaviour:
       isAsk: 0
       isDisable: 0
       suspicion: 0
-  - question: Of course. I have the police report here. Would you like to see it?
+  - question: Yes, that is correct.
+    isImportant: 0
+    score: 0
+    trigger: 
+    answers:
+    - answer: Continue
+      action:
+        m_PersistentCalls:
+          m_Calls: []
+      isAsk: 0
+      isDisable: 0
+      suspicion: 0
+  - question: When was the last time you were in contact with Ms. Brown?
     isImportant: 1
     score: 0
     trigger: 
+    answers:
+    - answer: "A few months ago, it\u2019s been a while since. "
+      action:
+        m_PersistentCalls:
+          m_Calls: []
+      isAsk: 0
+      isDisable: 0
+      suspicion: -15
+    - answer: 'Pretty recently, after all, we were still friends. '
+      action:
+        m_PersistentCalls:
+          m_Calls: []
+      isAsk: 0
+      isDisable: 0
+      suspicion: 5
+    - answer: "I couldn\u2019t tell you; I don\u2019t remember. "
+      action:
+        m_PersistentCalls:
+          m_Calls: []
+      isAsk: 0
+      isDisable: 0
+      suspicion: 20
+  - question: Of course. I have the police report here. Would you like to see it?
+    isImportant: 1
+    score: 0
+    trigger: police report
     answers:
     - answer: Yes, thank you.
       action:
@@ -5591,53 +5629,65 @@ MonoBehaviour:
       isAsk: 0
       isDisable: 0
       suspicion: 20
-  - question: Do you know of a Skylar Greenwood?
+  - question: Do you know anyone named Skylar?
     isImportant: 1
     score: 0
     trigger: 
     answers:
-    - answer: 'I think I may have met her at a party a while back. '
+    - answer: Sorry? Skylar who?
       action:
         m_PersistentCalls:
           m_Calls: []
       isAsk: 0
       isDisable: 0
-      suspicion: 5
-    - answer: 'Not that I can recall. '
-      action:
-        m_PersistentCalls:
-          m_Calls: []
-      isAsk: 0
-      isDisable: 0
-      suspicion: -10
-    - answer: "Yeah, she\u2019s a friend of Alex, isn\u2019t she? "
-      action:
-        m_PersistentCalls:
-          m_Calls: []
-      isAsk: 0
-      isDisable: 0
-      suspicion: -15
-  - question: Is there anyone I can verify that with?
+      suspicion: 0
+  - question: "Skylar Greenwood, who seems to be Ms. Brown\u2019s closest friend."
     isImportant: 1
     score: 0
     trigger: 
     answers:
-    - answer: 'Yeah, my friend. I can give you some contact information if you need
-        it. '
-      action:
-        m_PersistentCalls:
-          m_Calls: []
-      isAsk: 0
-      isDisable: 0
-      suspicion: -15
-    - answer: 'I was out solo, by myself.  '
+    - answer: "I don\u2019t know of her. "
       action:
         m_PersistentCalls:
           m_Calls: []
       isAsk: 0
       isDisable: 0
       suspicion: 20
-    - answer: 'That I have a bad memory? Maybe a doctor. '
+    - answer: "Oh, right, Skylar\u2026 I know her, I guess. I never liked her."
+      action:
+        m_PersistentCalls:
+          m_Calls: []
+      isAsk: 0
+      isDisable: 0
+      suspicion: 10
+    - answer: Yes, Skylar. Alex would always talk about her.
+      action:
+        m_PersistentCalls:
+          m_Calls: []
+      isAsk: 0
+      isDisable: 0
+      suspicion: -15
+  - question: Ms. Brown was killed on October 17th; where were you during that night?
+    isImportant: 1
+    score: 0
+    trigger: 
+    answers:
+    - answer: 'I was out of town visiting my family in North Carolina. '
+      action:
+        m_PersistentCalls:
+          m_Calls: []
+      isAsk: 0
+      isDisable: 0
+      suspicion: 20
+    - answer: "Probably at home, sleeping, nothing much going on anyway. I don\u2019t
+        remember."
+      action:
+        m_PersistentCalls:
+          m_Calls: []
+      isAsk: 0
+      isDisable: 0
+      suspicion: -15
+    - answer: "Partying, for sure. I\u2019m a party monster!"
       action:
         m_PersistentCalls:
           m_Calls: []
@@ -6215,7 +6265,7 @@ GameObject:
   - component: {fileID: 1719241485}
   - component: {fileID: 1719241486}
   m_Layer: 5
-  m_Name: GameObject
+  m_Name: Tooltip
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6238,7 +6288,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 0, y: 20}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 250, y: 100}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1719241483
