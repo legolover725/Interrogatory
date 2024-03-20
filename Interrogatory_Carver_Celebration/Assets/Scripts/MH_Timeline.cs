@@ -27,6 +27,9 @@ public class MH_Timeline : MonoBehaviour
     private MH_AudioSourcer source;
 
     [SerializeField]
+    private MH_SwitchCamera sc;
+
+    [SerializeField]
     private string buttonTagName;
 
     public int progression = 0;
@@ -39,18 +42,20 @@ public class MH_Timeline : MonoBehaviour
        for(int currentScene = progression; currentScene < scenes.Count -1; currentScene++){
              
            if(!isEnd){
+               source.endAudio(3);
             obj = scenes[currentScene];
-          
+            yield return new WaitUntil(()=> !sc.isInventory);
+           source.playClip(scenes[currentScene].recording,3,1f,false);
             if(scenes[currentScene].action != null)
                 scenes[currentScene].action.Invoke();
-            source.playClip(scenes[currentScene].recording,3,0.7f,false);
+           
             if(scenes[currentScene].needsInput)
                 yield return new WaitUntil(() => inputDetected);
                 inputDetected = false;
            scenes[currentScene].animation.Invoke();
-            if(GameObject.FindGameObjectWithTag(buttonTagName) != null && scenes[currentScene].isObj){
+           /* if(GameObject.FindGameObjectWithTag(buttonTagName) != null && scenes[currentScene].isObj){
                 yield return new WaitUntil(() => pressObj());
-            }
+            }*/
                 yield return new WaitForSeconds(scenes[currentScene].time);
              
 

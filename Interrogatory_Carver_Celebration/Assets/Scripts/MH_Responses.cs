@@ -45,11 +45,11 @@ public class MH_Responses : MonoBehaviour
     
     private CanvasGroup cg;
     private MH_ButtonSpawner b;
-
+    int index = 0;
     questionList obj;
 
     //determine if chimes theme should be played
-    public static bool playChimes = false;
+    public bool playChimes = false;
  
     public void assignValue(){
          if(progression < list.Count){
@@ -61,8 +61,9 @@ public class MH_Responses : MonoBehaviour
             for(int i = 0; i < obj.answers.Count; i++){
                 buttonList[i].transform.GetChild(0).GetComponent<Text>().text = obj.answers[i].answer;
                 if(obj.answers[i].isAsk){
+                    index = i;
                    buttonList[i].GetComponent<Button>().onClick.RemoveAllListeners();
-                   buttonList[i].GetComponent<Button>().onClick.AddListener(delegate{obj.answers[3].action.Invoke();});
+                   buttonList[i].GetComponent<Button>().onClick.AddListener(delegate{obj.answers[index].action.Invoke();});
                 }
                  if(obj.answers[i].isDisable)
                    buttonList[i].SetActive(false);
@@ -71,6 +72,8 @@ public class MH_Responses : MonoBehaviour
             //chimes theme should be played if an important question has been reached
             if(obj.trigger == "chimesTheme"){
                 playChimes = true;
+            }else{
+                playChimes = false;
             }
             StartCoroutine(scareMeter());
         }

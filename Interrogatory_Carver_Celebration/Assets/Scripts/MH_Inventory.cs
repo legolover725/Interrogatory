@@ -12,10 +12,11 @@ public class MH_Inventory : MonoBehaviour
     public class MH_Image{
         public Sprite s; 
         public UnityEvent ue;
-
-        public MH_Image(Sprite s, UnityEvent ue){
+        public string name;
+        public MH_Image(Sprite s, UnityEvent ue, string n){
             this.s = s;
             this.ue = ue;
+            name = n;
         }
     }
 
@@ -23,6 +24,10 @@ public class MH_Inventory : MonoBehaviour
     private GameObject image;
     [SerializeField]
     private Sprite report;
+    [SerializeField]
+    private GameObject text;
+    [SerializeField]
+    private MH_SwitchCamera sc;
     int i = 0;
     public void add(){
          i = (i >= 0 && i < evidence.Count -1) ? i+=1 : 0;
@@ -36,6 +41,7 @@ public class MH_Inventory : MonoBehaviour
     public void switcher(int s){
           image.GetComponent<Animation>().Play();
           image.GetComponent<Image>().preserveAspect = true;
+          text.GetComponent<Text>().text = evidence[s].name;
           image.GetComponent<Image>().sprite = (s >= 0 && s < evidence.Count) ? evidence[s].s : null;
           image.GetComponent<Button>().onClick.AddListener(delegate{evidence[s].ue.Invoke();});
     }
@@ -49,7 +55,7 @@ public class MH_Inventory : MonoBehaviour
 
         Vector3 p = new Vector3(Input.mouseScrollDelta.y,Input.mouseScrollDelta.y, Input.mouseScrollDelta.y);
             if(image.GetComponent<RectTransform>().localScale.y > 1 || Input.mouseScrollDelta.y > 0){
-            image.GetComponent<RectTransform>().localScale += p * 15 * Time.deltaTime ;
+            image.GetComponent<RectTransform>().localScale += p * 15 * Time.deltaTime;
             }
             
         
@@ -57,13 +63,16 @@ public class MH_Inventory : MonoBehaviour
     }
 
     public void addReport(){
-        evidence.Add(new MH_Image(report,null));
+       
+        evidence.Add(new MH_Image(report,null,"Police Report"));
+        sc.accessInventory();
+        switcher(evidence.Count - 1);
     }
     // Start is called before the first frame update
     void Start()
     {
         switcher(i);
-        addReport();
+     
     }
 
     // Update is called once per frame

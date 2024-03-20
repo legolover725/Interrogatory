@@ -590,7 +590,7 @@ Transform:
   - {fileID: 4931218027875398764}
   - {fileID: 1944300546}
   m_Father: {fileID: 543450652078143411}
-  m_LocalEulerAnglesHint: {x: 1.9480963, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 27.826834}
 --- !u!111 &201594735
 Animation:
   m_ObjectHideFlags: 0
@@ -605,6 +605,8 @@ Animation:
   - {fileID: 7400000, guid: 9adb79e243e05c44dabdbebaad918133, type: 2}
   - {fileID: 7400000, guid: bed905f2965c2dc48b5a6205dfc95431, type: 2}
   - {fileID: 7400000, guid: 0fde2788d8496294b855f6d1677d4c3f, type: 2}
+  - {fileID: 7400000, guid: ce929fff6fe3b28419e75e8321182c72, type: 2}
+  - {fileID: 7400000, guid: ce929fff6fe3b28419e75e8321182c72, type: 2}
   m_WrapMode: 0
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
@@ -786,7 +788,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 3182555734895974218, guid: 4310921a1f44f7041a2292b4585bdeaa, type: 2}
   m_audioClip: {fileID: 8300000, guid: 231be9604acd9234faabb09a1219dc70, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.206
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -1322,6 +1324,85 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 387171017}
+  m_CullTransparentMesh: 1
+--- !u!1 &388940498
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 388940499}
+  - component: {fileID: 388940501}
+  - component: {fileID: 388940500}
+  m_Layer: 5
+  m_Name: Description
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &388940499
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 388940498}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1700661261}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 160, y: 30.16}
+  m_Pivot: {x: 0.5, y: -3.4}
+--- !u!114 &388940500
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 388940498}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 20
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 0
+    m_MaxSize: 64
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: New Text
+--- !u!222 &388940501
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 388940498}
   m_CullTransparentMesh: 1
 --- !u!1 &415117191
 GameObject:
@@ -2963,7 +3044,19 @@ MonoBehaviour:
     isScene: 0
     animation:
       m_PersistentCalls:
-        m_Calls: []
+        m_Calls:
+        - m_Target: {fileID: 919132147554594058}
+          m_TargetAssemblyTypeName: MH_Animatedeer, Assembly-CSharp
+          m_MethodName: randomAnimation
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
     fadeOut:
       m_PersistentCalls:
         m_Calls:
@@ -3002,7 +3095,19 @@ MonoBehaviour:
     isScene: 0
     animation:
       m_PersistentCalls:
-        m_Calls: []
+        m_Calls:
+        - m_Target: {fileID: 919132147554594058}
+          m_TargetAssemblyTypeName: MH_Animatedeer, Assembly-CSharp
+          m_MethodName: randomAnimation
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
     fadeOut:
       m_PersistentCalls:
         m_Calls:
@@ -3041,7 +3146,19 @@ MonoBehaviour:
     isScene: 0
     animation:
       m_PersistentCalls:
-        m_Calls: []
+        m_Calls:
+        - m_Target: {fileID: 919132147554594058}
+          m_TargetAssemblyTypeName: MH_Animatedeer, Assembly-CSharp
+          m_MethodName: randomAnimation
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
     fadeOut:
       m_PersistentCalls:
         m_Calls:
@@ -3080,7 +3197,19 @@ MonoBehaviour:
     isScene: 0
     animation:
       m_PersistentCalls:
-        m_Calls: []
+        m_Calls:
+        - m_Target: {fileID: 919132147554594058}
+          m_TargetAssemblyTypeName: MH_Animatedeer, Assembly-CSharp
+          m_MethodName: randomAnimation
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
     fadeOut:
       m_PersistentCalls:
         m_Calls:
@@ -3119,7 +3248,19 @@ MonoBehaviour:
     isScene: 0
     animation:
       m_PersistentCalls:
-        m_Calls: []
+        m_Calls:
+        - m_Target: {fileID: 919132147554594058}
+          m_TargetAssemblyTypeName: MH_Animatedeer, Assembly-CSharp
+          m_MethodName: randomAnimation
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
     fadeOut:
       m_PersistentCalls:
         m_Calls:
@@ -3158,7 +3299,19 @@ MonoBehaviour:
     isScene: 0
     animation:
       m_PersistentCalls:
-        m_Calls: []
+        m_Calls:
+        - m_Target: {fileID: 919132147554594058}
+          m_TargetAssemblyTypeName: MH_Animatedeer, Assembly-CSharp
+          m_MethodName: randomAnimation
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
     fadeOut:
       m_PersistentCalls:
         m_Calls:
@@ -3918,6 +4071,7 @@ MonoBehaviour:
     recording: {fileID: 8300000, guid: d0be78766114061449093ea151f8c964, type: 3}
     time: 0.25
   source: {fileID: 963194232}
+  sc: {fileID: 1700661263}
   buttonTagName: Choice
   progression: 0
 --- !u!4 &827298260
@@ -5357,7 +5511,7 @@ AudioSource:
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
+  Priority: 37
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
@@ -6185,6 +6339,25 @@ MonoBehaviour:
       isAsk: 0
       isDisable: 0
       suspicion: 0
+    - answer: Go to inventory
+      action:
+        m_PersistentCalls:
+          m_Calls:
+          - m_Target: {fileID: 1700661263}
+            m_TargetAssemblyTypeName: MH_SwitchCamera, Assembly-CSharp
+            m_MethodName: responder
+            m_Mode: 1
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: 
+              m_BoolArgument: 0
+            m_CallState: 2
+      isAsk: 1
+      isDisable: 0
+      suspicion: 0
   - question: Alright, and may I ask, how did you meet Ms. Brown?
     isImportant: 1
     score: 0
@@ -6320,7 +6493,19 @@ MonoBehaviour:
     - answer: Yes, thank you.
       action:
         m_PersistentCalls:
-          m_Calls: []
+          m_Calls:
+          - m_Target: {fileID: 1700661262}
+            m_TargetAssemblyTypeName: MH_Inventory, Assembly-CSharp
+            m_MethodName: addReport
+            m_Mode: 1
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: 
+              m_BoolArgument: 0
+            m_CallState: 2
       isAsk: 0
       isDisable: 0
       suspicion: -5
@@ -6750,6 +6935,7 @@ MonoBehaviour:
   progression: 0
   suspicionMeter: 50
   worryMeter: 0
+  playChimes: 0
 --- !u!225 &1596634230
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -6953,7 +7139,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 1768126955839242143, guid: 4310921a1f44f7041a2292b4585bdeaa, type: 2}
   m_audioClip: {fileID: 8300000, guid: b210f26d8bcaed743b18c50431402f1e, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.164
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -7226,6 +7412,7 @@ RectTransform:
   - {fileID: 232881946}
   - {fileID: 530777295}
   - {fileID: 977966268}
+  - {fileID: 388940499}
   m_Father: {fileID: 319333125}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -7249,29 +7436,12 @@ MonoBehaviour:
   - s: {fileID: 21300000, guid: 3ce9cb061b36d434fa97eb783721bc40, type: 3}
     ue:
       m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 1299398026}
-          m_TargetAssemblyTypeName: MH_SetScene, Assembly-CSharp
-          m_MethodName: sceneLoad
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
-  - s: {fileID: 21300000, guid: b09bf423d045c064f94791f10fcdbdfd, type: 3}
-    ue:
-      m_PersistentCalls:
         m_Calls: []
-  - s: {fileID: 0}
-    ue:
-      m_PersistentCalls:
-        m_Calls: []
+    name: Murder scene
   image: {fileID: 977966267}
-  report: {fileID: 0}
+  report: {fileID: 21300000, guid: b09bf423d045c064f94791f10fcdbdfd, type: 3}
+  text: {fileID: 388940498}
+  sc: {fileID: 1700661263}
 --- !u!114 &1700661263
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7287,6 +7457,8 @@ MonoBehaviour:
   camera:
   - {fileID: 484843170}
   - {fileID: 1508465279}
+  r: {fileID: 1596634229}
+  isInventory: 0
   p: {fileID: 1596634227}
 --- !u!225 &1700661264
 CanvasGroup:
@@ -7565,7 +7737,7 @@ Transform:
   - {fileID: 8632055957252245182}
   - {fileID: 7534246566928680098}
   m_Father: {fileID: 201594734}
-  m_LocalEulerAnglesHint: {x: 0, y: -15.904005, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: -13.22075, z: 0}
 --- !u!111 &1944300547
 Animation:
   m_ObjectHideFlags: 0
@@ -7578,9 +7750,9 @@ Animation:
   m_Animation: {fileID: 7400000, guid: d0972e9aea987da46acf495c207c3791, type: 2}
   m_Animations:
   - {fileID: 7400000, guid: d0972e9aea987da46acf495c207c3791, type: 2}
-  - {fileID: 7400000, guid: bdb070fbf42a27e4a81fe26a29eb6192, type: 2}
   - {fileID: 7400000, guid: 32abcb2964dc76e4b8d6f433577a866e, type: 2}
   - {fileID: 7400000, guid: 909b92bbf64a75d449b8e0db0193f705, type: 2}
+  - {fileID: 7400000, guid: ac7b1d309a0421f4f87c20fab7a01a40, type: 2}
   m_WrapMode: 0
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
@@ -7904,14 +8076,24 @@ MonoBehaviour:
   - aList:
     - name: {fileID: 2193423312781462818}
       animation: {fileID: 7400000, guid: a4bf76297bba2f14fb283372e853b15b, type: 2}
+    - name: {fileID: 8204707764657819598}
+      animation: {fileID: 7400000, guid: f23d46b95444b4d46848d878b9013c92, type: 2}
+    - name: {fileID: 1106758176165140278}
+      animation: {fileID: 7400000, guid: 35f2ddeee1702234095ddc7daef62998, type: 2}
+  - aList:
+    - name: {fileID: 201594733}
+      animation: {fileID: 7400000, guid: ce929fff6fe3b28419e75e8321182c72, type: 2}
+    - name: {fileID: 1944300545}
+      animation: {fileID: 7400000, guid: ac7b1d309a0421f4f87c20fab7a01a40, type: 2}
   talk:
-    name: {fileID: 0}
-    animation: {fileID: 0}
+    name: {fileID: 2193423312781462818}
+    animation: {fileID: 7400000, guid: 9c3f1188b4fa00642b1fa045c858156c, type: 2}
   eyeLoop:
     name: {fileID: 1944300545}
     animation: {fileID: 7400000, guid: d0972e9aea987da46acf495c207c3791, type: 2}
   source: {fileID: 1226223641}
   replaced: 0
+  head: {fileID: 201594733}
 --- !u!1 &919132147708106859
 GameObject:
   m_ObjectHideFlags: 0
@@ -8570,7 +8752,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 201594734}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -90, y: 0, z: -1.215383}
 --- !u!111 &4931218027875398765
 Animation:
   m_ObjectHideFlags: 0
@@ -8584,6 +8766,7 @@ Animation:
   m_Animations:
   - {fileID: 7400000, guid: 1250cd61abe03274ca9d9ac8c97206c2, type: 2}
   - {fileID: 7400000, guid: a4bf76297bba2f14fb283372e853b15b, type: 2}
+  - {fileID: 7400000, guid: 9c3f1188b4fa00642b1fa045c858156c, type: 2}
   m_WrapMode: 0
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
@@ -9094,7 +9277,7 @@ Animation:
   serializedVersion: 3
   m_Animation: {fileID: 0}
   m_Animations:
-  - {fileID: 7400000, guid: bdb070fbf42a27e4a81fe26a29eb6192, type: 2}
+  - {fileID: 7400000, guid: 35f2ddeee1702234095ddc7daef62998, type: 2}
   m_WrapMode: 0
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
@@ -9303,7 +9486,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071069, y: -0.0000000037252903, z: -0, w: 0.7071067}
   m_LocalPosition: {x: 0.8426539, y: 2.982272, z: -0.49574777}
-  m_LocalScale: {x: 14.713196, y: 14.713198, z: 14.7132}
+  m_LocalScale: {x: 14.7132, y: 14.713198, z: 14.7132}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1944300546}
@@ -9318,7 +9501,8 @@ Animation:
   m_Enabled: 1
   serializedVersion: 3
   m_Animation: {fileID: 0}
-  m_Animations: []
+  m_Animations:
+  - {fileID: 7400000, guid: f23d46b95444b4d46848d878b9013c92, type: 2}
   m_WrapMode: 0
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0

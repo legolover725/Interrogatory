@@ -18,27 +18,30 @@ public class MH_AudioSourcer: MonoBehaviour
        
         if(audioList[i].clip != c || c == null)
             if(audioList[i].isPlaying){
-                StartCoroutine(transitSound(audioList[i],c,v,l));
+              //  StartCoroutine(transitSound(audioList[i],c,v,l));
             }else{
                 audioList[i].clip = c;
                 audioList[i].volume = v;
                 audioList[i].loop = l;
                 audioList[i].Play();
+                 //  StartCoroutine(transitSound(audioList[i],c,v,l));
             }
         
     }
 
     public IEnumerator transitSound(AudioSource a, AudioClip c, float v, bool l){
+              a.Play();
         float t = 0;
-        while(t < 0.4f){
-            a.volume = Mathf.Lerp(a.volume,0.0f,t/2f);
+        while(t < 0.5f){
+            Debug.Log("start");
+            a.volume = Mathf.Lerp(0.0f,a.volume,t/2f);
             t += Time.deltaTime;
             yield return new WaitForSeconds(0.05f);
         }
         a.clip = c;
         a.volume = v;
         a.loop = l;
-        a.Play();
+  
     }
 
     public void endAudio(int i){
