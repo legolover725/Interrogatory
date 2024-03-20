@@ -62,8 +62,10 @@ public class MH_Animatedeer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //if(source.clip != null && source.isPlaying && replaced == false){
-          //  talk.name.GetComponent<Animation>().Play(talk.animation.name);
-       // }
+        if(source.clip != null && source.isPlaying && replaced == false){
+            talk.name.GetComponent<Animation>().Play(talk.animation.name);
+        }else{
+            talk.name.GetComponent<Animation>().clip = null;
+        }
     }
 }

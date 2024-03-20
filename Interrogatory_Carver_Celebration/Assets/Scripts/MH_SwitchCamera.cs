@@ -12,6 +12,7 @@ public class MH_SwitchCamera : MonoBehaviour
     public List<CinemachineVirtualCamera> camera = new List<CinemachineVirtualCamera>();
     private CinemachineVirtualCamera activeCamera;
     public MH_Responses r;
+    public bool isInventory;
     [SerializeField]
     private GameObject p;
     int i = 0;
@@ -40,6 +41,7 @@ public class MH_SwitchCamera : MonoBehaviour
               switchCamera(camera[1]);
             p.GetComponent<MH_Responses>().FadeChoice(p.GetComponent<CanvasGroup>(),0);
                p.GetComponent<MH_Responses>().FadeChoice(GetComponent<CanvasGroup>(),1);
+               isInventory = true;
          }
         if(Input.GetKeyDown("i")){
             i++;
@@ -47,14 +49,18 @@ public class MH_SwitchCamera : MonoBehaviour
                 switchCamera(camera[1]);
                 p.GetComponent<MH_Responses>().FadeChoice(p.GetComponent<CanvasGroup>(),0);
                 p.GetComponent<MH_Responses>().FadeChoice(GetComponent<CanvasGroup>(),1);
+                isInventory = true;
             }else{
                 switchCamera(camera[0]);
                  p.GetComponent<MH_Responses>().FadeChoice(p.GetComponent<CanvasGroup>(),1);
                  p.GetComponent<MH_Responses>().FadeChoice(GetComponent<CanvasGroup>(),0);
+                 isInventory = false;
             }
         }
     }
-
+    public void accessInventory(){
+        i++;
+    }
     public void responder(){
         Debug.Log("accessed");
         string str = EventSystem.current.currentSelectedGameObject.transform.GetChild(0).GetComponent<Text>().text;

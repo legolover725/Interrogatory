@@ -788,7 +788,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 3182555734895974218, guid: 4310921a1f44f7041a2292b4585bdeaa, type: 2}
   m_audioClip: {fileID: 8300000, guid: 231be9604acd9234faabb09a1219dc70, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.206
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -4071,6 +4071,7 @@ MonoBehaviour:
     recording: {fileID: 8300000, guid: d0be78766114061449093ea151f8c964, type: 3}
     time: 0.25
   source: {fileID: 963194232}
+  sc: {fileID: 1700661263}
   buttonTagName: Choice
   progression: 0
 --- !u!4 &827298260
@@ -5510,7 +5511,7 @@ AudioSource:
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
+  Priority: 37
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500
@@ -6492,7 +6493,19 @@ MonoBehaviour:
     - answer: Yes, thank you.
       action:
         m_PersistentCalls:
-          m_Calls: []
+          m_Calls:
+          - m_Target: {fileID: 1700661262}
+            m_TargetAssemblyTypeName: MH_Inventory, Assembly-CSharp
+            m_MethodName: addReport
+            m_Mode: 1
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: 
+              m_BoolArgument: 0
+            m_CallState: 2
       isAsk: 0
       isDisable: 0
       suspicion: -5
@@ -7126,7 +7139,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 1768126955839242143, guid: 4310921a1f44f7041a2292b4585bdeaa, type: 2}
   m_audioClip: {fileID: 8300000, guid: b210f26d8bcaed743b18c50431402f1e, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.164
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -7420,19 +7433,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   evidence:
-  - s: {fileID: 21300000, guid: b09bf423d045c064f94791f10fcdbdfd, type: 3}
-    ue:
-      m_PersistentCalls:
-        m_Calls: []
-    name: Police report
   - s: {fileID: 21300000, guid: 3ce9cb061b36d434fa97eb783721bc40, type: 3}
     ue:
       m_PersistentCalls:
         m_Calls: []
     name: Murder scene
   image: {fileID: 977966267}
-  report: {fileID: 0}
+  report: {fileID: 21300000, guid: b09bf423d045c064f94791f10fcdbdfd, type: 3}
   text: {fileID: 388940498}
+  sc: {fileID: 1700661263}
 --- !u!114 &1700661263
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7449,6 +7458,7 @@ MonoBehaviour:
   - {fileID: 484843170}
   - {fileID: 1508465279}
   r: {fileID: 1596634229}
+  isInventory: 0
   p: {fileID: 1596634227}
 --- !u!225 &1700661264
 CanvasGroup:
@@ -8076,8 +8086,8 @@ MonoBehaviour:
     - name: {fileID: 1944300545}
       animation: {fileID: 7400000, guid: ac7b1d309a0421f4f87c20fab7a01a40, type: 2}
   talk:
-    name: {fileID: 0}
-    animation: {fileID: 0}
+    name: {fileID: 2193423312781462818}
+    animation: {fileID: 7400000, guid: 9c3f1188b4fa00642b1fa045c858156c, type: 2}
   eyeLoop:
     name: {fileID: 1944300545}
     animation: {fileID: 7400000, guid: d0972e9aea987da46acf495c207c3791, type: 2}
@@ -8742,7 +8752,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 201594734}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: -90, y: 0, z: -1.215383}
 --- !u!111 &4931218027875398765
 Animation:
   m_ObjectHideFlags: 0
@@ -8756,6 +8766,7 @@ Animation:
   m_Animations:
   - {fileID: 7400000, guid: 1250cd61abe03274ca9d9ac8c97206c2, type: 2}
   - {fileID: 7400000, guid: a4bf76297bba2f14fb283372e853b15b, type: 2}
+  - {fileID: 7400000, guid: 9c3f1188b4fa00642b1fa045c858156c, type: 2}
   m_WrapMode: 0
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0

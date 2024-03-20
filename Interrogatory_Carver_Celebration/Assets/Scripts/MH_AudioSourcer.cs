@@ -18,12 +18,13 @@ public class MH_AudioSourcer: MonoBehaviour
        
         if(audioList[i].clip != c || c == null)
             if(audioList[i].isPlaying){
-                StartCoroutine(transitSound(audioList[i],c,v,l));
+              //  StartCoroutine(transitSound(audioList[i],c,v,l));
             }else{
                 audioList[i].clip = c;
                 audioList[i].volume = v;
                 audioList[i].loop = l;
-                    StartCoroutine(transitSound(audioList[i],c,v,l));
+                audioList[i].Play();
+                 //  StartCoroutine(transitSound(audioList[i],c,v,l));
             }
         
     }

@@ -13,9 +13,10 @@ public class MH_Inventory : MonoBehaviour
         public Sprite s; 
         public UnityEvent ue;
         public string name;
-        public MH_Image(Sprite s, UnityEvent ue){
+        public MH_Image(Sprite s, UnityEvent ue, string n){
             this.s = s;
             this.ue = ue;
+            name = n;
         }
     }
 
@@ -25,6 +26,8 @@ public class MH_Inventory : MonoBehaviour
     private Sprite report;
     [SerializeField]
     private GameObject text;
+    [SerializeField]
+    private MH_SwitchCamera sc;
     int i = 0;
     public void add(){
          i = (i >= 0 && i < evidence.Count -1) ? i+=1 : 0;
@@ -60,13 +63,16 @@ public class MH_Inventory : MonoBehaviour
     }
 
     public void addReport(){
-        //evidence.Add(new MH_Image(report,null));
+       
+        evidence.Add(new MH_Image(report,null,"Police Report"));
+        sc.accessInventory();
+        switcher(evidence.Count - 1);
     }
     // Start is called before the first frame update
     void Start()
     {
         switcher(i);
-        addReport();
+     
     }
 
     // Update is called once per frame
