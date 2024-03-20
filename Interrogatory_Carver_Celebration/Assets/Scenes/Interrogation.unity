@@ -2576,8 +2576,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 160, y: 100}
+  m_AnchoredPosition: {x: 2.6360016, y: 15.599998}
+  m_SizeDelta: {x: 199.03, y: 82}
   m_Pivot: {x: 0.5, y: 0.8}
 --- !u!114 &809061070
 MonoBehaviour:
@@ -2600,7 +2600,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 33b85b99ead7d47b090f915ed9f9f57b, type: 3}
     m_FontSize: 18
     m_FontStyle: 0
     m_BestFit: 0
@@ -2690,7 +2690,7 @@ MonoBehaviour:
           m_CallState: 2
     recording: {fileID: 0}
     time: 90
-  - name: Beggining scene
+  - name: Beginning scene
     action:
       m_PersistentCalls:
         m_Calls:
@@ -2717,7 +2717,7 @@ MonoBehaviour:
         m_Calls: []
     recording: {fileID: 0}
     time: 6
-  - name: question
+  - name: into1 ("Good evening...October 17th, 2009")
     action:
       m_PersistentCalls:
         m_Calls:
@@ -2766,9 +2766,9 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-    recording: {fileID: 0}
+    recording: {fileID: 8300000, guid: 74d069f44f0be4dfe9c2c8cb8c7e2e47, type: 3}
     time: 0.25
-  - name: question
+  - name: intro2("Alright, I'm just going...of Ms. Brown?")
     action:
       m_PersistentCalls:
         m_Calls:
@@ -2817,9 +2817,9 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-    recording: {fileID: 0}
+    recording: {fileID: 8300000, guid: 7f5ef3002750c4bb08352ac0bb909c0e, type: 3}
     time: 0.25
-  - name: question
+  - name: water
     action:
       m_PersistentCalls:
         m_Calls:
@@ -2868,9 +2868,9 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-    recording: {fileID: 0}
+    recording: {fileID: 8300000, guid: 163cf8ed9d55b4e65badf941dcca1a0a, type: 3}
     time: 0.25
-  - name: question
+  - name: question1(meet Ms. Brown)
     action:
       m_PersistentCalls:
         m_Calls:
@@ -2919,9 +2919,9 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-    recording: {fileID: 0}
+    recording: {fileID: 8300000, guid: 0931dc8572a91498c88b8cb5c2435ead, type: 3}
     time: 0.25
-  - name: question
+  - name: question2("Has anyone told...the murder?")
     action:
       m_PersistentCalls:
         m_Calls:
@@ -2970,9 +2970,9 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-    recording: {fileID: 0}
+    recording: {fileID: 8300000, guid: 9c2089ca00bae4c0095de734a764c1d6, type: 3}
     time: 0.25
-  - name: question
+  - name: info/response1("Well, we've learned...Ms. Brown's home")
     action:
       m_PersistentCalls:
         m_Calls:
@@ -3021,9 +3021,9 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-    recording: {fileID: 0}
+    recording: {fileID: 8300000, guid: 1b6130ee1e61048b5b4c9615a3a05886, type: 3}
     time: 0.25
-  - name: question
+  - name: response2("Yes, that is correct")
     action:
       m_PersistentCalls:
         m_Calls:
@@ -3072,9 +3072,9 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-    recording: {fileID: 0}
+    recording: {fileID: 8300000, guid: 13b1b4ce2559a45058490be680c30bc0, type: 3}
     time: 0.25
-  - name: question
+  - name: question3(contact with Ms. Brown)
     action:
       m_PersistentCalls:
         m_Calls:
@@ -3123,9 +3123,9 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-    recording: {fileID: 0}
+    recording: {fileID: 8300000, guid: 48fd95859179d4d8eb49e99bd890dbc3, type: 3}
     time: 0.25
-  - name: question
+  - name: question4(I have the police...see it?)
     action:
       m_PersistentCalls:
         m_Calls:
@@ -3174,9 +3174,9 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-    recording: {fileID: 0}
+    recording: {fileID: 8300000, guid: 003b88a0f2e6942b3ab94359d2d34234, type: 3}
     time: 0.25
-  - name: question
+  - name: question5("Do you...named Skylar?")
     action:
       m_PersistentCalls:
         m_Calls:
@@ -3225,9 +3225,9 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-    recording: {fileID: 0}
+    recording: {fileID: 8300000, guid: 94fec1c7d78a743e3b0920ecbcff8983, type: 3}
     time: 0.25
-  - name: question
+  - name: question6("Skylar Greenwood...closest Friend")
     action:
       m_PersistentCalls:
         m_Calls:
@@ -3276,9 +3276,9 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-    recording: {fileID: 0}
+    recording: {fileID: 8300000, guid: 40e22116d51f44c0da744bc600d49003, type: 3}
     time: 0.25
-  - name: question
+  - name: question7("Ms. Brown was killed...on that night?")
     action:
       m_PersistentCalls:
         m_Calls:
@@ -3327,7 +3327,709 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-    recording: {fileID: 0}
+    recording: {fileID: 8300000, guid: e10a3df3d0f834d8e95af79fb763a9e9, type: 3}
+    time: 0.25
+  - name: question8("Investigators discovered...the party?")
+    action:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1596634229}
+          m_TargetAssemblyTypeName: MH_Responses, Assembly-CSharp
+          m_MethodName: assignValue
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    needsInput: 1
+    isObj: 0
+    isScene: 0
+    animation:
+      m_PersistentCalls:
+        m_Calls: []
+    fadeOut:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1596634229}
+          m_TargetAssemblyTypeName: MH_Responses, Assembly-CSharp
+          m_MethodName: minusSuspicion
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    recording: {fileID: 8300000, guid: e10a3df3d0f834d8e95af79fb763a9e9, type: 3}
+    time: 0.25
+  - name: ask3("Alright, thank you for that information")
+    action:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1596634229}
+          m_TargetAssemblyTypeName: MH_Responses, Assembly-CSharp
+          m_MethodName: assignValue
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    needsInput: 1
+    isObj: 0
+    isScene: 0
+    animation:
+      m_PersistentCalls:
+        m_Calls: []
+    fadeOut:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1596634229}
+          m_TargetAssemblyTypeName: MH_Responses, Assembly-CSharp
+          m_MethodName: minusSuspicion
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    recording: {fileID: 8300000, guid: fd4b513b079fd46f5b7787625aa9e558, type: 3}
+    time: 0.25
+  - name: response3("A black Glock 43X pistol")
+    action:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1596634229}
+          m_TargetAssemblyTypeName: MH_Responses, Assembly-CSharp
+          m_MethodName: assignValue
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    needsInput: 1
+    isObj: 0
+    isScene: 0
+    animation:
+      m_PersistentCalls:
+        m_Calls: []
+    fadeOut:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1596634229}
+          m_TargetAssemblyTypeName: MH_Responses, Assembly-CSharp
+          m_MethodName: minusSuspicion
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    recording: {fileID: 8300000, guid: 449dc5e893c6146caac2d1e3cefcbd9e, type: 3}
+    time: 0.25
+  - name: info/response4("No, unfortunately...significance of it")
+    action:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1596634229}
+          m_TargetAssemblyTypeName: MH_Responses, Assembly-CSharp
+          m_MethodName: assignValue
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    needsInput: 1
+    isObj: 0
+    isScene: 0
+    animation:
+      m_PersistentCalls:
+        m_Calls: []
+    fadeOut:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1596634229}
+          m_TargetAssemblyTypeName: MH_Responses, Assembly-CSharp
+          m_MethodName: minusSuspicion
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    recording: {fileID: 8300000, guid: 8ce5271e8e6ce486c85aaa4148512511, type: 3}
+    time: 0.25
+  - name: question9("Have you ever...Ms. Brown's home?")
+    action:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1596634229}
+          m_TargetAssemblyTypeName: MH_Responses, Assembly-CSharp
+          m_MethodName: assignValue
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    needsInput: 1
+    isObj: 0
+    isScene: 0
+    animation:
+      m_PersistentCalls:
+        m_Calls: []
+    fadeOut:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1596634229}
+          m_TargetAssemblyTypeName: MH_Responses, Assembly-CSharp
+          m_MethodName: minusSuspicion
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    recording: {fileID: 8300000, guid: 690a842a949d64e5fb2fd9d12c318467, type: 3}
+    time: 0.25
+  - name: question10("Investigators...time of the murder?")
+    action:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1596634229}
+          m_TargetAssemblyTypeName: MH_Responses, Assembly-CSharp
+          m_MethodName: assignValue
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    needsInput: 1
+    isObj: 0
+    isScene: 0
+    animation:
+      m_PersistentCalls:
+        m_Calls: []
+    fadeOut:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1596634229}
+          m_TargetAssemblyTypeName: MH_Responses, Assembly-CSharp
+          m_MethodName: minusSuspicion
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    recording: {fileID: 8300000, guid: 413be29963bab4f7ca6a0f2018ba3114, type: 3}
+    time: 0.25
+  - name: info("I've just recieved...this case")
+    action:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1596634229}
+          m_TargetAssemblyTypeName: MH_Responses, Assembly-CSharp
+          m_MethodName: assignValue
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    needsInput: 1
+    isObj: 0
+    isScene: 0
+    animation:
+      m_PersistentCalls:
+        m_Calls: []
+    fadeOut:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1596634229}
+          m_TargetAssemblyTypeName: MH_Responses, Assembly-CSharp
+          m_MethodName: minusSuspicion
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    recording: {fileID: 8300000, guid: fa856b6fdb4d8446ea0df372d9df9980, type: 3}
+    time: 0.25
+  - name: info("It appears...resulting in her murder")
+    action:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1596634229}
+          m_TargetAssemblyTypeName: MH_Responses, Assembly-CSharp
+          m_MethodName: assignValue
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    needsInput: 1
+    isObj: 0
+    isScene: 0
+    animation:
+      m_PersistentCalls:
+        m_Calls: []
+    fadeOut:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1596634229}
+          m_TargetAssemblyTypeName: MH_Responses, Assembly-CSharp
+          m_MethodName: minusSuspicion
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    recording: {fileID: 8300000, guid: 7cf063a05f9424d3a80c438671fba1e0, type: 3}
+    time: 0.25
+  - name: question11("I'm also getting word...about voice modifiers?")
+    action:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1596634229}
+          m_TargetAssemblyTypeName: MH_Responses, Assembly-CSharp
+          m_MethodName: assignValue
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    needsInput: 1
+    isObj: 0
+    isScene: 0
+    animation:
+      m_PersistentCalls:
+        m_Calls: []
+    fadeOut:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1596634229}
+          m_TargetAssemblyTypeName: MH_Responses, Assembly-CSharp
+          m_MethodName: minusSuspicion
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    recording: {fileID: 8300000, guid: db9ac4d6efeeb4a6d901f03ef07fb7e6, type: 3}
+    time: 0.25
+  - name: info("As protocal...safety precautions")
+    action:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1596634229}
+          m_TargetAssemblyTypeName: MH_Responses, Assembly-CSharp
+          m_MethodName: assignValue
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    needsInput: 1
+    isObj: 0
+    isScene: 0
+    animation:
+      m_PersistentCalls:
+        m_Calls: []
+    fadeOut:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1596634229}
+          m_TargetAssemblyTypeName: MH_Responses, Assembly-CSharp
+          m_MethodName: minusSuspicion
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    recording: {fileID: 8300000, guid: 2da02e1e4f3cc4c74aaa9636b6882fb4, type: 3}
+    time: 0.25
+  - name: question12("Can you explain...Glock 43X pistol?")
+    action:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1596634229}
+          m_TargetAssemblyTypeName: MH_Responses, Assembly-CSharp
+          m_MethodName: assignValue
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    needsInput: 1
+    isObj: 0
+    isScene: 0
+    animation:
+      m_PersistentCalls:
+        m_Calls: []
+    fadeOut:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1596634229}
+          m_TargetAssemblyTypeName: MH_Responses, Assembly-CSharp
+          m_MethodName: minusSuspicion
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    recording: {fileID: 8300000, guid: ea82db79931064764a1bddab2ef689d8, type: 3}
+    time: 0.25
+  - name: question13("Correct...license")
+    action:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1596634229}
+          m_TargetAssemblyTypeName: MH_Responses, Assembly-CSharp
+          m_MethodName: assignValue
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    needsInput: 1
+    isObj: 0
+    isScene: 0
+    animation:
+      m_PersistentCalls:
+        m_Calls: []
+    fadeOut:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1596634229}
+          m_TargetAssemblyTypeName: MH_Responses, Assembly-CSharp
+          m_MethodName: minusSuspicion
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    recording: {fileID: 8300000, guid: bb5b45888e3c9402681a0ae011ea9712, type: 3}
+    time: 0.25
+  - name: response4("Right, but...murder weapon")
+    action:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1596634229}
+          m_TargetAssemblyTypeName: MH_Responses, Assembly-CSharp
+          m_MethodName: assignValue
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    needsInput: 1
+    isObj: 0
+    isScene: 0
+    animation:
+      m_PersistentCalls:
+        m_Calls: []
+    fadeOut:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1596634229}
+          m_TargetAssemblyTypeName: MH_Responses, Assembly-CSharp
+          m_MethodName: minusSuspicion
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    recording: {fileID: 8300000, guid: df367f27c178045b5a66a128ed26b79f, type: 3}
+    time: 0.25
+  - name: respnse5("Sure...")
+    action:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1596634229}
+          m_TargetAssemblyTypeName: MH_Responses, Assembly-CSharp
+          m_MethodName: assignValue
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    needsInput: 1
+    isObj: 0
+    isScene: 0
+    animation:
+      m_PersistentCalls:
+        m_Calls: []
+    fadeOut:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1596634229}
+          m_TargetAssemblyTypeName: MH_Responses, Assembly-CSharp
+          m_MethodName: minusSuspicion
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    recording: {fileID: 8300000, guid: 8293a470444bf47c4911db852c0bc53b, type: 3}
+    time: 0.25
+  - name: question14("What were you...murder?")
+    action:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1596634229}
+          m_TargetAssemblyTypeName: MH_Responses, Assembly-CSharp
+          m_MethodName: assignValue
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    needsInput: 1
+    isObj: 0
+    isScene: 0
+    animation:
+      m_PersistentCalls:
+        m_Calls: []
+    fadeOut:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1596634229}
+          m_TargetAssemblyTypeName: MH_Responses, Assembly-CSharp
+          m_MethodName: minusSuspicion
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    recording: {fileID: 8300000, guid: 330c64299baf14cbfb953dc5cb17a88b, type: 3}
+    time: 0.25
+  - name: question15("Did you...time you knew each other?"
+    action:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1596634229}
+          m_TargetAssemblyTypeName: MH_Responses, Assembly-CSharp
+          m_MethodName: assignValue
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    needsInput: 1
+    isObj: 0
+    isScene: 0
+    animation:
+      m_PersistentCalls:
+        m_Calls: []
+    fadeOut:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1596634229}
+          m_TargetAssemblyTypeName: MH_Responses, Assembly-CSharp
+          m_MethodName: minusSuspicion
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    recording: {fileID: 8300000, guid: 68546f0c9eb4d4668bde46d8b910972d, type: 3}
+    time: 0.25
+  - name: question16("Let's say you...kill Ms. Brown?")
+    action:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1596634229}
+          m_TargetAssemblyTypeName: MH_Responses, Assembly-CSharp
+          m_MethodName: assignValue
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    needsInput: 1
+    isObj: 0
+    isScene: 0
+    animation:
+      m_PersistentCalls:
+        m_Calls: []
+    fadeOut:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1596634229}
+          m_TargetAssemblyTypeName: MH_Responses, Assembly-CSharp
+          m_MethodName: minusSuspicion
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    recording: {fileID: 8300000, guid: 1214a2842b3a446e2a673750a0cad774, type: 3}
+    time: 0.25
+  - name: response6("Alright, thank you")
+    action:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1596634229}
+          m_TargetAssemblyTypeName: MH_Responses, Assembly-CSharp
+          m_MethodName: assignValue
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    needsInput: 1
+    isObj: 0
+    isScene: 0
+    animation:
+      m_PersistentCalls:
+        m_Calls: []
+    fadeOut:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1596634229}
+          m_TargetAssemblyTypeName: MH_Responses, Assembly-CSharp
+          m_MethodName: minusSuspicion
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    recording: {fileID: 8300000, guid: fd4b513b079fd46f5b7787625aa9e558, type: 3}
     time: 0.25
   - name: end
     action:
@@ -3650,16 +4352,16 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 920541740}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 0.8682674, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1284741630}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: -3.3238297}
   m_SizeDelta: {x: 480, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &920541742
@@ -3683,7 +4385,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 33b85b99ead7d47b090f915ed9f9f57b, type: 3}
     m_FontSize: 14
     m_FontStyle: 0
     m_BestFit: 1
@@ -5051,7 +5753,7 @@ RectTransform:
   m_GameObject: {fileID: 1284741629}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 1.1517189, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 920541741}
@@ -5059,7 +5761,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 19}
   m_SizeDelta: {x: 600, y: 100}
   m_Pivot: {x: 0.5, y: 1.5}
 --- !u!222 &1284741632
@@ -5578,7 +6280,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   list:
   - question: 'Good evening. My name is Officer Charles Berkley; thank you for coming
-      today to investigate the death of Alex Brown on October 17th, 2009.  '
+      today regarding the murder of Alex Brown on October 17th, 2009.  '
     isImportant: 0
     score: 0
     trigger: 
@@ -5591,8 +6293,8 @@ MonoBehaviour:
       isDisable: 0
       suspicion: 0
   - question: "Alright, I\u2019m just going to ask you a series of questions about
-      the murder. As you know, this incident happened a few weeks ago, and we\u2019re 
-      trying to gather information from all the people Alex used to know. It\u2019s
+      the murder. As you know, this incident happened a few weeks ago, and we\u2019re
+      just trying to gather information from all the people Alex used to know. It\u2019s
       my understanding that you are an ex-partner of Ms. Brown?"
     isImportant: 0
     score: 0
@@ -5700,80 +6402,7 @@ MonoBehaviour:
       isAsk: 1
       isDisable: 0
       suspicion: 0
-  - question: I see. When did you and Ms. Brown first start dating?
-    isImportant: 1
-    score: 0
-    trigger: 
-    answers:
-    - answer: We were high school sweethearts for a while, you know, before the breakup
-      action:
-        m_PersistentCalls:
-          m_Calls: []
-      isAsk: 0
-      isDisable: 0
-      suspicion: -5
-    - answer: We start dating at a amusement park
-      action:
-        m_PersistentCalls:
-          m_Calls: []
-      isAsk: 0
-      isDisable: 0
-      suspicion: -10
-    - answer: In college
-      action:
-        m_PersistentCalls:
-          m_Calls: []
-      isAsk: 0
-      isDisable: 0
-      suspicion: 15
-  - question: And when did you two split up?
-    isImportant: 1
-    score: 0
-    trigger: 
-    answers:
-    - answer: 'A few months ago. '
-      action:
-        m_PersistentCalls:
-          m_Calls: []
-      isAsk: 0
-      isDisable: 0
-      suspicion: 15
-    - answer: 'What do you mean? We never broke up. '
-      action:
-        m_PersistentCalls:
-          m_Calls: []
-      isAsk: 0
-      isDisable: 0
-      suspicion: -15
-  - question: "I see\u2026 and how would you rate your relationship with Ms. Brown?"
-    isImportant: 1
-    score: 0
-    trigger: 
-    answers:
-    - answer: 'It was great; we both loved each other dearly. I do miss her. Whoever
-        has done this needs to be caught. '
-      action:
-        m_PersistentCalls:
-          m_Calls: []
-      isAsk: 0
-      isDisable: 0
-      suspicion: -20
-    - answer: 'We were happy together.  '
-      action:
-        m_PersistentCalls:
-          m_Calls: []
-      isAsk: 0
-      isDisable: 0
-      suspicion: -10
-    - answer: 'We had our moments, but we still made it work. '
-      action:
-        m_PersistentCalls:
-          m_Calls: []
-      isAsk: 0
-      isDisable: 0
-      suspicion: -15
-  - question: No problem. Were you aware of the murder of Ms. Brown? Has anyone told
-      you any information about the murder?
+  - question: Has anyone told you any information about the murder?
     isImportant: 1
     score: 0
     trigger: chimesTheme
@@ -5817,10 +6446,48 @@ MonoBehaviour:
       isAsk: 0
       isDisable: 0
       suspicion: 0
-  - question: Of course. I have the police report here. Would you like to see it?
+  - question: Yes, that is correct.
+    isImportant: 0
+    score: 0
+    trigger: 
+    answers:
+    - answer: Continue
+      action:
+        m_PersistentCalls:
+          m_Calls: []
+      isAsk: 0
+      isDisable: 0
+      suspicion: 0
+  - question: When was the last time you were in contact with Ms. Brown?
     isImportant: 1
     score: 0
     trigger: 
+    answers:
+    - answer: "A few months ago, it\u2019s been a while since. "
+      action:
+        m_PersistentCalls:
+          m_Calls: []
+      isAsk: 0
+      isDisable: 0
+      suspicion: -15
+    - answer: 'Pretty recently, after all, we were still friends. '
+      action:
+        m_PersistentCalls:
+          m_Calls: []
+      isAsk: 0
+      isDisable: 0
+      suspicion: 5
+    - answer: "I couldn\u2019t tell you; I don\u2019t remember. "
+      action:
+        m_PersistentCalls:
+          m_Calls: []
+      isAsk: 0
+      isDisable: 0
+      suspicion: 20
+  - question: I have the police report here. Would you like to see it?
+    isImportant: 1
+    score: 0
+    trigger: police report
     answers:
     - answer: Yes, thank you.
       action:
@@ -5836,59 +6503,418 @@ MonoBehaviour:
       isAsk: 0
       isDisable: 0
       suspicion: 20
-  - question: Do you know of a Skylar Greenwood?
+  - question: Do you know anyone named Skylar?
     isImportant: 1
     score: 0
     trigger: 
     answers:
-    - answer: 'I think I may have met her at a party a while back. '
+    - answer: Sorry? Skylar who?
       action:
         m_PersistentCalls:
           m_Calls: []
       isAsk: 0
       isDisable: 0
-      suspicion: 5
-    - answer: 'Not that I can recall. '
-      action:
-        m_PersistentCalls:
-          m_Calls: []
-      isAsk: 0
-      isDisable: 0
-      suspicion: -10
-    - answer: "Yeah, she\u2019s a friend of Alex, isn\u2019t she? "
-      action:
-        m_PersistentCalls:
-          m_Calls: []
-      isAsk: 0
-      isDisable: 0
-      suspicion: -15
-  - question: Is there anyone I can verify that with?
+      suspicion: 0
+  - question: "Skylar Greenwood, who seems to be Ms. Brown\u2019s closest friend."
     isImportant: 1
     score: 0
     trigger: 
     answers:
-    - answer: 'Yeah, my friend. I can give you some contact information if you need
-        it. '
-      action:
-        m_PersistentCalls:
-          m_Calls: []
-      isAsk: 0
-      isDisable: 0
-      suspicion: -15
-    - answer: 'I was out solo, by myself.  '
+    - answer: "I don\u2019t know of her. "
       action:
         m_PersistentCalls:
           m_Calls: []
       isAsk: 0
       isDisable: 0
       suspicion: 20
-    - answer: 'That I have a bad memory? Maybe a doctor. '
+    - answer: "Oh, right, Skylar\u2026 I know her, I guess. I never liked her."
+      action:
+        m_PersistentCalls:
+          m_Calls: []
+      isAsk: 0
+      isDisable: 0
+      suspicion: 10
+    - answer: Yes, Skylar. Alex would always talk about her.
+      action:
+        m_PersistentCalls:
+          m_Calls: []
+      isAsk: 0
+      isDisable: 0
+      suspicion: -15
+  - question: Ms. Brown was killed on October 17th; where were you during that night?
+    isImportant: 1
+    score: 0
+    trigger: 
+    answers:
+    - answer: 'I was out of town visiting my family in North Carolina. '
+      action:
+        m_PersistentCalls:
+          m_Calls: []
+      isAsk: 0
+      isDisable: 0
+      suspicion: 20
+    - answer: "Probably at home, sleeping, nothing much going on anyway. I don\u2019t
+        remember."
+      action:
+        m_PersistentCalls:
+          m_Calls: []
+      isAsk: 0
+      isDisable: 0
+      suspicion: -15
+    - answer: "Partying, for sure. I\u2019m a party monster!"
       action:
         m_PersistentCalls:
           m_Calls: []
       isAsk: 0
       isDisable: 0
       suspicion: 5
+  - question: Investigators discovered that Ms. Brown was invited to a party on the
+      night of October 17th; it was a surprise party for Skylar. Were you invited
+      or aware of the party?
+    isImportant: 1
+    score: 0
+    trigger: 
+    answers:
+    - answer: "Yeah, I was invited. But I wasn\u2019t planning on going until I changed
+        my mind. "
+      action:
+        m_PersistentCalls:
+          m_Calls: []
+      isAsk: 0
+      isDisable: 0
+      suspicion: -5
+    - answer: I heard about the party, but then I heard it got canceled. No one went
+        to it.
+      action:
+        m_PersistentCalls:
+          m_Calls: []
+      isAsk: 0
+      isDisable: 0
+      suspicion: 20
+    - answer: "I didn\u2019t go."
+      action:
+        m_PersistentCalls:
+          m_Calls: []
+      isAsk: 0
+      isDisable: 0
+      suspicion: 5
+  - question: Alright, thank you for that information.
+    isImportant: 0
+    score: 0
+    trigger: 
+    answers:
+    - answer: What kind of weapon was used to commit the crime again?
+      action:
+        m_PersistentCalls:
+          m_Calls: []
+      isAsk: 0
+      isDisable: 0
+      suspicion: 5
+  - question: A black Glock 43X pistol.
+    isImportant: 0
+    score: 0
+    trigger: 
+    answers:
+    - answer: Was there any evidence left at the scene of the suspect?
+      action:
+        m_PersistentCalls:
+          m_Calls: []
+      isAsk: 0
+      isDisable: 0
+      suspicion: 10
+  - question: "No, unfortunately, there wasn\u2019t any tangible evidence of who
+      the suspect may be. Aside from the evidence of the victim, there isn\u2019t
+      anything incriminating. However, the victim's cell phone was found, and a phone
+      call was traced right before the incident. Investigators are currently trying
+      to track this phone call to see the significance of it."
+    isImportant: 0
+    score: 0
+    trigger: 
+    answers:
+    - answer: Continue
+      action:
+        m_PersistentCalls:
+          m_Calls: []
+      isAsk: 0
+      isDisable: 0
+      suspicion: 0
+  - question: "Have you ever been around Blackberry Dr.? Right around the corner
+      from Ms. Brown\u2019s home?"
+    isImportant: 1
+    score: 0
+    trigger: 
+    answers:
+    - answer: 'Oh, yeah, all the time! '
+      action:
+        m_PersistentCalls:
+          m_Calls: []
+      isAsk: 0
+      isDisable: 0
+      suspicion: 5
+    - answer: I ignore street signs.
+      action:
+        m_PersistentCalls:
+          m_Calls: []
+      isAsk: 0
+      isDisable: 0
+      suspicion: 10
+    - answer: "I think I\u2019ve passed by that corner before."
+      action:
+        m_PersistentCalls:
+          m_Calls: []
+      isAsk: 0
+      isDisable: 0
+      suspicion: -10
+  - question: "Investigators were checking the surveillance cameras around the area,
+      and they noticed a figure on that street. I don\u2019t mean to ask again, but
+      were you not in the area around the time of the murder?"
+    isImportant: 1
+    score: 0
+    trigger: 
+    answers:
+    - answer: No. Like I said, I was not nearby.
+      action:
+        m_PersistentCalls:
+          m_Calls: []
+      isAsk: 0
+      isDisable: 0
+      suspicion: 10
+    - answer: "I might\u2019ve been, but I don\u2019t remember."
+      action:
+        m_PersistentCalls:
+          m_Calls: []
+      isAsk: 0
+      isDisable: 0
+      suspicion: -10
+    - answer: I wish not to answer.
+      action:
+        m_PersistentCalls:
+          m_Calls: []
+      isAsk: 0
+      isDisable: 0
+      suspicion: 20
+  - question: "I\u2019ve just received an update from one of my colleagues on this
+      case."
+    isImportant: 0
+    score: 0
+    trigger: 
+    answers:
+    - answer: ...
+      action:
+        m_PersistentCalls:
+          m_Calls: []
+      isAsk: 0
+      isDisable: 0
+      suspicion: 5
+  - question: It appears that the suspect on the phone call was able to lure Ms.
+      Brown out of her home, resulting in her murder.
+    isImportant: 0
+    score: 0
+    trigger: 
+    answers:
+    - answer: ...
+      action:
+        m_PersistentCalls:
+          m_Calls: []
+      isAsk: 0
+      isDisable: 0
+      suspicion: 5
+  - question: "I\u2019m also getting word on a voice modification being used on the
+      suspect's voice. Do you know anything about voice modifiers?"
+    isImportant: 1
+    score: 0
+    trigger: 
+    answers:
+    - answer: I used to play around with them in middle school.
+      action:
+        m_PersistentCalls:
+          m_Calls: []
+      isAsk: 0
+      isDisable: 0
+      suspicion: -10
+    - answer: "No, I don\u2019t know what that is."
+      action:
+        m_PersistentCalls:
+          m_Calls: []
+      isAsk: 0
+      isDisable: 0
+      suspicion: 20
+    - answer: "I\u2019ve never tried them, but I\u2019m interested in them."
+      action:
+        m_PersistentCalls:
+          m_Calls: []
+      isAsk: 0
+      isDisable: 0
+      suspicion: 10
+  - question: "As protocol, whoever enters the police department has to let go of
+      their belongings, and they\u2019re searched; you know, safety precautions."
+    isImportant: 1
+    score: 0
+    trigger: 
+    answers:
+    - answer: "Of course, that\u2019s understandable."
+      action:
+        m_PersistentCalls:
+          m_Calls: []
+      isAsk: 0
+      isDisable: 0
+      suspicion: 0
+  - question: Can you explain why you have a gun license registered for a Glock 43X
+      pistol?
+    isImportant: 1
+    score: 0
+    trigger: 
+    answers:
+    - answer: "Oh. Isn\u2019t that the same gun that was used to murder Alex?"
+      action:
+        m_PersistentCalls:
+          m_Calls: []
+      isAsk: 0
+      isDisable: 0
+      suspicion: 5
+  - question: 'Correct, now answer my question: why do you have this license?'
+    isImportant: 1
+    score: 0
+    trigger: 
+    answers:
+    - answer: 'I used to go to a shooting range with my father. '
+      action:
+        m_PersistentCalls:
+          m_Calls: []
+      isAsk: 0
+      isDisable: 0
+      suspicion: -15
+    - answer: "I\u2019m just interested in guns; I find them cool. "
+      action:
+        m_PersistentCalls:
+          m_Calls: []
+      isAsk: 0
+      isDisable: 0
+      suspicion: 5
+    - answer: I got it a while ago so that I could have it.
+      action:
+        m_PersistentCalls:
+          m_Calls: []
+      isAsk: 0
+      isDisable: 0
+      suspicion: 20
+  - question: "Right, but that doesn\u2019t answer why your registered gun is the
+      same as the murder weapon."
+    isImportant: 1
+    score: 0
+    trigger: 
+    answers:
+    - answer: It must be a coincidence.
+      action:
+        m_PersistentCalls:
+          m_Calls: []
+      isAsk: 0
+      isDisable: 0
+      suspicion: 5
+  - question: Sure...
+    isImportant: 0
+    score: 0
+    trigger: 
+    answers:
+    - answer: Continue
+      action:
+        m_PersistentCalls:
+          m_Calls: []
+      isAsk: 0
+      isDisable: 0
+      suspicion: 5
+  - question: What were you doing the day after the murder?
+    isImportant: 1
+    score: 0
+    trigger: 
+    answers:
+    - answer: I was on my way to church, I believe.
+      action:
+        m_PersistentCalls:
+          m_Calls: []
+      isAsk: 0
+      isDisable: 0
+      suspicion: -15
+    - answer: Just doing some laundry.
+      action:
+        m_PersistentCalls:
+          m_Calls: []
+      isAsk: 0
+      isDisable: 0
+      suspicion: 10
+    - answer: I wish not to answer.
+      action:
+        m_PersistentCalls:
+          m_Calls: []
+      isAsk: 0
+      isDisable: 0
+      suspicion: 20
+  - question: Did you and Ms. Brown ever have complications during the time you knew
+      each other?
+    isImportant: 1
+    score: 0
+    trigger: 
+    answers:
+    - answer: Not necessarily. We had a pretty average relationship.
+      action:
+        m_PersistentCalls:
+          m_Calls: []
+      isAsk: 0
+      isDisable: 0
+      suspicion: -15
+    - answer: Pretty often, we would fight.
+      action:
+        m_PersistentCalls:
+          m_Calls: []
+      isAsk: 0
+      isDisable: 0
+      suspicion: 10
+    - answer: "My friends would call us abusive, but I don\u2019t think so."
+      action:
+        m_PersistentCalls:
+          m_Calls: []
+      isAsk: 0
+      isDisable: 0
+      suspicion: 15
+  - question: "Let\u2019s say you were the murderer. Would you have any reason to
+      kill Ms. Brown?"
+    isImportant: 1
+    score: 0
+    trigger: 
+    answers:
+    - answer: Of course not!
+      action:
+        m_PersistentCalls:
+          m_Calls: []
+      isAsk: 0
+      isDisable: 0
+      suspicion: -15
+    - answer: Why would I kill her?
+      action:
+        m_PersistentCalls:
+          m_Calls: []
+      isAsk: 0
+      isDisable: 0
+      suspicion: 5
+    - answer: I wish not to answer.
+      action:
+        m_PersistentCalls:
+          m_Calls: []
+      isAsk: 0
+      isDisable: 0
+      suspicion: 20
+  - question: Alright, thank you.
+    isImportant: 0
+    score: 0
+    trigger: 
+    answers:
+    - answer: Continue
+      action:
+        m_PersistentCalls:
+          m_Calls: []
+      isAsk: 0
+      isDisable: 0
+      suspicion: 0
   buttonList:
   - {fileID: 618196109}
   - {fileID: 447686591}
@@ -6450,7 +7476,7 @@ GameObject:
   - component: {fileID: 1719241485}
   - component: {fileID: 1719241486}
   m_Layer: 5
-  m_Name: GameObject
+  m_Name: Tooltip
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6473,7 +7499,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 0, y: 20}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 250, y: 100}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1719241483
