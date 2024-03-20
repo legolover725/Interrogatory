@@ -5425,7 +5425,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   list:
   - question: 'Good evening. My name is Officer Charles Berkley; thank you for coming
-      today regarding the death of Alex Brown on October 17th, 2009.  '
+      today regarding the murder of Alex Brown on October 17th, 2009.  '
     isImportant: 0
     score: 0
     trigger: 
@@ -5438,8 +5438,8 @@ MonoBehaviour:
       isDisable: 0
       suspicion: 0
   - question: "Alright, I\u2019m just going to ask you a series of questions about
-      the murder. As you know, this incident happened a few weeks ago, and we\u2019re 
-      trying to gather information from all the people Alex used to know. It\u2019s
+      the murder. As you know, this incident happened a few weeks ago, and we\u2019re
+      just trying to gather information from all the people Alex used to know. It\u2019s
       my understanding that you are an ex-partner of Ms. Brown?"
     isImportant: 0
     score: 0
@@ -5610,7 +5610,7 @@ MonoBehaviour:
       isAsk: 0
       isDisable: 0
       suspicion: 20
-  - question: Of course. I have the police report here. Would you like to see it?
+  - question: I have the police report here. Would you like to see it?
     isImportant: 1
     score: 0
     trigger: police report
