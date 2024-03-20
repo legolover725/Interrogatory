@@ -55,7 +55,7 @@ public class MH_Enviroment : MonoBehaviour
         if(!isEnd){
             range = Mathf.Lerp(range,response.worryMeter,Time.deltaTime/2f);
             changeColorScene();
-            if(MH_Responses.playChimes){
+            if(response.playChimes){
               audio.playClip(clip3,2,0.75f,false);
             }
         }

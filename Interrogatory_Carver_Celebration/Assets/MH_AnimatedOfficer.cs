@@ -29,13 +29,16 @@ public class MH_Animatedeer : MonoBehaviour
     public AnimationObject eyeLoop;
     public AudioSource source;
     public bool replaced = false;
-
+    public GameObject head;
     public IEnumerator play(AnimationClip a1,AnimationClip a2, GameObject name){
         replaced = true;
         yield return new WaitForSeconds(a1.length);
         replaced = false;
         if(a2 != null)
         name.GetComponent<Animation>().Play(a2.name);
+        if(name == head){
+            head.transform.position = new Vector3(0,0,0);
+        }
     }
 
     public void randomAnimation(){

@@ -48,9 +48,9 @@ public class MH_Timeline : MonoBehaviour
                 yield return new WaitUntil(() => inputDetected);
                 inputDetected = false;
            scenes[currentScene].animation.Invoke();
-            if(GameObject.FindGameObjectWithTag(buttonTagName) != null && scenes[currentScene].isObj){
+           /* if(GameObject.FindGameObjectWithTag(buttonTagName) != null && scenes[currentScene].isObj){
                 yield return new WaitUntil(() => pressObj());
-            }
+            }*/
                 yield return new WaitForSeconds(scenes[currentScene].time);
              
 
