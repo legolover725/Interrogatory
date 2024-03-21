@@ -42,6 +42,8 @@ public class MH_Timeline : MonoBehaviour
        for(int currentScene = progression; currentScene < scenes.Count -1; currentScene++){
              
            if(!isEnd){
+                        
+                   progression = currentScene;
                source.endAudio(3);
             obj = scenes[currentScene];
             yield return new WaitUntil(()=> !sc.isInventory);
@@ -56,11 +58,14 @@ public class MH_Timeline : MonoBehaviour
            /* if(GameObject.FindGameObjectWithTag(buttonTagName) != null && scenes[currentScene].isObj){
                 yield return new WaitUntil(() => pressObj());
             }*/
+                if(scenes[currentScene].isScene){
+
+                }else{
                 yield return new WaitForSeconds(scenes[currentScene].time);
-             
+                }
 
                    yield return new WaitForSeconds(0.25f);
-                   progression = currentScene;
+          
                   
            }
         }
