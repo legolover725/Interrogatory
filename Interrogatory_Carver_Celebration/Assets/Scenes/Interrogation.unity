@@ -183,6 +183,11 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 577588348}
   m_SourcePrefab: {fileID: 100100000, guid: 40b04e29fe910a4448da5bd166e32d39, type: 3}
+--- !u!224 &51321283 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 1604226682112893276, guid: c64e5173508e64718bbd996d997e4fc8, type: 3}
+  m_PrefabInstance: {fileID: 3555985796310034863}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &82838296
 GameObject:
   m_ObjectHideFlags: 0
@@ -1097,6 +1102,7 @@ RectTransform:
   - {fileID: 709312521}
   - {fileID: 1700661261}
   - {fileID: 2071152788}
+  - {fileID: 51321283}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -1966,6 +1972,53 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!1 &603393097
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 603393099}
+  - component: {fileID: 603393098}
+  m_Layer: 0
+  m_Name: Flashback1 player
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &603393098
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 603393097}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61cd237893c82184ca994000666c147a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sd: {fileID: 1589146003}
+  t: Flashback1
+  duration: 0
+--- !u!4 &603393099
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 603393097}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.6524787, y: -0.29411852, z: -44.872673}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &618196109 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7482154608028390842, guid: e44e554e11f94cb4792df81659aa73c2, type: 3}
@@ -2160,6 +2213,53 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: acb8762acf936c14ba46af7879ddd903, type: 3}
+--- !u!1 &664441456
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 664441458}
+  - component: {fileID: 664441457}
+  m_Layer: 0
+  m_Name: Flashback2 player
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &664441457
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 664441456}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61cd237893c82184ca994000666c147a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sd: {fileID: 1589146003}
+  t: Flashback2
+  duration: 0
+--- !u!4 &664441458
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 664441456}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.6524787, y: -0.29411852, z: -44.872673}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &709312520
 GameObject:
   m_ObjectHideFlags: 0
@@ -2651,7 +2751,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scenes:
-  - name: flashback
+  - name: flashback0
     action:
       m_PersistentCalls:
         m_Calls:
@@ -2868,7 +2968,7 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-    recording: {fileID: 8300000, guid: 163cf8ed9d55b4e65badf941dcca1a0a, type: 3}
+    recording: {fileID: 8300000, guid: 0a07bdd3ecd484ce48fbe88451fd3436, type: 3}
     time: 0.25
   - name: question1(meet Ms. Brown)
     action:
@@ -3021,7 +3121,7 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-    recording: {fileID: 8300000, guid: 1b6130ee1e61048b5b4c9615a3a05886, type: 3}
+    recording: {fileID: 8300000, guid: 15353bfd53bea4dd5a7344d02dfdc2d8, type: 3}
     time: 0.25
   - name: response2("Yes, that is correct")
     action:
@@ -3176,6 +3276,45 @@ MonoBehaviour:
           m_CallState: 2
     recording: {fileID: 8300000, guid: 003b88a0f2e6942b3ab94359d2d34234, type: 3}
     time: 0.25
+  - name: flashback1
+    action:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 603393098}
+          m_TargetAssemblyTypeName: MH_SetScene, Assembly-CSharp
+          m_MethodName: sceneLoad
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    needsInput: 0
+    isObj: 0
+    isScene: 0
+    animation:
+      m_PersistentCalls:
+        m_Calls: []
+    fadeOut:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 0}
+          m_TargetAssemblyTypeName: MH_DecideGuilty, Assembly-CSharp
+          m_MethodName: 
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    recording: {fileID: 0}
+    time: 90
   - name: question5("Do you...named Skylar?")
     action:
       m_PersistentCalls:
@@ -3327,7 +3466,7 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-    recording: {fileID: 8300000, guid: e10a3df3d0f834d8e95af79fb763a9e9, type: 3}
+    recording: {fileID: 8300000, guid: 222a1edcdd01748318391f8b4bb49a9c, type: 3}
     time: 0.25
   - name: question8("Investigators discovered...the party?")
     action:
@@ -3366,7 +3505,7 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-    recording: {fileID: 8300000, guid: e10a3df3d0f834d8e95af79fb763a9e9, type: 3}
+    recording: {fileID: 8300000, guid: d63bdd856b7aa4279bbc4eea55480409, type: 3}
     time: 0.25
   - name: ask3("Alright, thank you for that information")
     action:
@@ -3483,7 +3622,7 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-    recording: {fileID: 8300000, guid: 8ce5271e8e6ce486c85aaa4148512511, type: 3}
+    recording: {fileID: 8300000, guid: 4d9a9a7da39874f5d95b3376bbd179c0, type: 3}
     time: 0.25
   - name: question9("Have you ever...Ms. Brown's home?")
     action:
@@ -3524,6 +3663,45 @@ MonoBehaviour:
           m_CallState: 2
     recording: {fileID: 8300000, guid: 690a842a949d64e5fb2fd9d12c318467, type: 3}
     time: 0.25
+  - name: flashback2
+    action:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 664441457}
+          m_TargetAssemblyTypeName: MH_SetScene, Assembly-CSharp
+          m_MethodName: sceneLoad
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    needsInput: 0
+    isObj: 0
+    isScene: 0
+    animation:
+      m_PersistentCalls:
+        m_Calls: []
+    fadeOut:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 0}
+          m_TargetAssemblyTypeName: MH_DecideGuilty, Assembly-CSharp
+          m_MethodName: 
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    recording: {fileID: 0}
+    time: 90
   - name: question10("Investigators...time of the murder?")
     action:
       m_PersistentCalls:
@@ -3561,7 +3739,7 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-    recording: {fileID: 8300000, guid: 413be29963bab4f7ca6a0f2018ba3114, type: 3}
+    recording: {fileID: 8300000, guid: eb99460579d5141d18621b67503e25a3, type: 3}
     time: 0.25
   - name: info("I've just recieved...this case")
     action:
@@ -3600,7 +3778,7 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-    recording: {fileID: 8300000, guid: fa856b6fdb4d8446ea0df372d9df9980, type: 3}
+    recording: {fileID: 8300000, guid: ea9c0fa8cda4a464a924fc4ddfec5184, type: 3}
     time: 0.25
   - name: info("It appears...resulting in her murder")
     action:
@@ -3639,7 +3817,7 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-    recording: {fileID: 8300000, guid: 7cf063a05f9424d3a80c438671fba1e0, type: 3}
+    recording: {fileID: 8300000, guid: a5cc1453b8f8546a381cb41362d6241c, type: 3}
     time: 0.25
   - name: question11("I'm also getting word...about voice modifiers?")
     action:
@@ -3717,7 +3895,7 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 0
           m_CallState: 2
-    recording: {fileID: 8300000, guid: 2da02e1e4f3cc4c74aaa9636b6882fb4, type: 3}
+    recording: {fileID: 8300000, guid: 7bcc0a44b5f5b4d8381520326800932d, type: 3}
     time: 0.25
   - name: question12("Can you explain...Glock 43X pistol?")
     action:
@@ -3875,6 +4053,45 @@ MonoBehaviour:
           m_CallState: 2
     recording: {fileID: 8300000, guid: 8293a470444bf47c4911db852c0bc53b, type: 3}
     time: 0.25
+  - name: flashback3
+    action:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 962682154}
+          m_TargetAssemblyTypeName: MH_SetScene, Assembly-CSharp
+          m_MethodName: sceneLoad
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    needsInput: 0
+    isObj: 0
+    isScene: 0
+    animation:
+      m_PersistentCalls:
+        m_Calls: []
+    fadeOut:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 0}
+          m_TargetAssemblyTypeName: MH_DecideGuilty, Assembly-CSharp
+          m_MethodName: 
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+    recording: {fileID: 0}
+    time: 90
   - name: question14("What were you...murder?")
     action:
       m_PersistentCalls:
@@ -4552,6 +4769,53 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 937446646}
   m_CullTransparentMesh: 1
+--- !u!1 &962682153
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 962682155}
+  - component: {fileID: 962682154}
+  m_Layer: 0
+  m_Name: Flashback3 player
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &962682154
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 962682153}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61cd237893c82184ca994000666c147a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sd: {fileID: 1589146003}
+  t: Flashback3
+  duration: 0
+--- !u!4 &962682155
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 962682153}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.6524787, y: -0.29411852, z: -44.872673}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -4783,6 +5047,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
+  mute: 0
 --- !u!82 &963194233
 AudioSource:
   m_ObjectHideFlags: 0
@@ -5900,7 +6165,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sd: {fileID: 1589146003}
-  t: Flashback1
+  t: Flashback0
   duration: 0
 --- !u!1 &1380944375
 GameObject:
@@ -8464,6 +8729,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1596634228}
     m_Modifications:
+    - target: {fileID: 684649221593292892, guid: e44e554e11f94cb4792df81659aa73c2, type: 3}
+      propertyPath: m_Text
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 722456501428754915, guid: e44e554e11f94cb4792df81659aa73c2, type: 3}
       propertyPath: m_Pivot.x
       value: 1.3
@@ -8552,11 +8821,140 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8480561967891661022, guid: e44e554e11f94cb4792df81659aa73c2, type: 3}
+      propertyPath: m_Padding.m_Left
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 8480561967891661022, guid: e44e554e11f94cb4792df81659aa73c2, type: 3}
+      propertyPath: m_Padding.m_Right
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 8581893075784983726, guid: e44e554e11f94cb4792df81659aa73c2, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8581893075784983726, guid: e44e554e11f94cb4792df81659aa73c2, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8581893075784983726, guid: e44e554e11f94cb4792df81659aa73c2, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 228
+      objectReference: {fileID: 0}
+    - target: {fileID: 8581893075784983726, guid: e44e554e11f94cb4792df81659aa73c2, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 67
+      objectReference: {fileID: 0}
+    - target: {fileID: 8581893075784983726, guid: e44e554e11f94cb4792df81659aa73c2, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 125
+      objectReference: {fileID: 0}
+    - target: {fileID: 8581893075784983726, guid: e44e554e11f94cb4792df81659aa73c2, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -35.5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e44e554e11f94cb4792df81659aa73c2, type: 3}
+--- !u!1001 &3555985796310034863
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 319333125}
+    m_Modifications:
+    - target: {fileID: 1604226682112893276, guid: c64e5173508e64718bbd996d997e4fc8, type: 3}
+      propertyPath: m_Pivot.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1604226682112893276, guid: c64e5173508e64718bbd996d997e4fc8, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1604226682112893276, guid: c64e5173508e64718bbd996d997e4fc8, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1604226682112893276, guid: c64e5173508e64718bbd996d997e4fc8, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1604226682112893276, guid: c64e5173508e64718bbd996d997e4fc8, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1604226682112893276, guid: c64e5173508e64718bbd996d997e4fc8, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1604226682112893276, guid: c64e5173508e64718bbd996d997e4fc8, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 1604226682112893276, guid: c64e5173508e64718bbd996d997e4fc8, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 1604226682112893276, guid: c64e5173508e64718bbd996d997e4fc8, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1604226682112893276, guid: c64e5173508e64718bbd996d997e4fc8, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1604226682112893276, guid: c64e5173508e64718bbd996d997e4fc8, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1604226682112893276, guid: c64e5173508e64718bbd996d997e4fc8, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1604226682112893276, guid: c64e5173508e64718bbd996d997e4fc8, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1604226682112893276, guid: c64e5173508e64718bbd996d997e4fc8, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1604226682112893276, guid: c64e5173508e64718bbd996d997e4fc8, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1604226682112893276, guid: c64e5173508e64718bbd996d997e4fc8, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -15
+      objectReference: {fileID: 0}
+    - target: {fileID: 1604226682112893276, guid: c64e5173508e64718bbd996d997e4fc8, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 11.700012
+      objectReference: {fileID: 0}
+    - target: {fileID: 1604226682112893276, guid: c64e5173508e64718bbd996d997e4fc8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1604226682112893276, guid: c64e5173508e64718bbd996d997e4fc8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1604226682112893276, guid: c64e5173508e64718bbd996d997e4fc8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7031279500987048067, guid: c64e5173508e64718bbd996d997e4fc8, type: 3}
+      propertyPath: m_Name
+      value: muteButton
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c64e5173508e64718bbd996d997e4fc8, type: 3}
 --- !u!4 &3612539098812967841
 Transform:
   m_ObjectHideFlags: 0
@@ -9611,3 +10009,6 @@ SceneRoots:
   - {fileID: 1640747441}
   - {fileID: 428179706}
   - {fileID: 543450652078143411}
+  - {fileID: 603393099}
+  - {fileID: 664441458}
+  - {fileID: 962682155}

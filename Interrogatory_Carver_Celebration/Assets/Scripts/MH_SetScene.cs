@@ -7,7 +7,6 @@ public class MH_SetScene : MonoBehaviour
 {
     public MH_SaveData sd;
     public string t;
-    public string l;
     public float duration;
 
     public void sceneLoad(){
@@ -18,7 +17,7 @@ public class MH_SetScene : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-       StartCoroutine(delayTime(l,duration));  
+       //StartCoroutine(delayTime("Flashback1",duration));  
     }
 
     public IEnumerator delayTime(string currentScene, float time){
