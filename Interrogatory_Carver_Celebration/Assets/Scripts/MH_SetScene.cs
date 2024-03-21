@@ -17,7 +17,7 @@ public class MH_SetScene : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-       // StartCoroutine(delayTime("Flashback1",duration));  
+       StartCoroutine(delayTime("Flashback1",duration));  
     }
 
     public IEnumerator delayTime(string currentScene, float time){
