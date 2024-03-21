@@ -8,25 +8,23 @@ public class MH_AudioSourcer: MonoBehaviour
     public List<AudioSource> backgroundAudio;
     public List<AudioClip> backgroundClip;
     int intense;
-
+    public bool mute = false;
 
     // c is the audio clip
     // i is index of list (which audio clip you want to play)
     // v is volume
     // l specifies if an audio clip will be looped
     public void playClip(AudioClip c, int i, float v, bool l){
-       
         if(audioList[i].clip != c || c == null)
-            if(audioList[i].isPlaying){
-              //  StartCoroutine(transitSound(audioList[i],c,v,l));
-            }else{
-                audioList[i].clip = c;
-                audioList[i].volume = v;
-                audioList[i].loop = l;
-                audioList[i].Play();
-                 //  StartCoroutine(transitSound(audioList[i],c,v,l));
-            }
-        
+        if(audioList[i].isPlaying){
+            //  StartCoroutine(transitSound(audioList[i],c,v,l));
+        }else{
+            audioList[i].clip = c;
+            audioList[i].volume = v;
+            audioList[i].loop = l;
+            audioList[i].Play();
+                //  StartCoroutine(transitSound(audioList[i],c,v,l));
+        } 
     }
 
     public IEnumerator transitSound(AudioSource a, AudioClip c, float v, bool l){
@@ -79,5 +77,11 @@ public class MH_AudioSourcer: MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(mute){
+            AudioListener.volume = 0;
+        }
+        else{
+            AudioListener.volume = 1;
+        }
     }
 }
