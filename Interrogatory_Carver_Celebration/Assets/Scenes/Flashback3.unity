@@ -235,7 +235,7 @@ MonoBehaviour:
   - Interrogation
   progression: 0
   l: Flashback3
-  duration: 17
+  duration: 13
   isInScene: 1
 --- !u!114 &56230946
 MonoBehaviour:

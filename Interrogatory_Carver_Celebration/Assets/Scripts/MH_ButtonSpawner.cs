@@ -21,7 +21,7 @@ public class MH_ButtonSpawner : MonoBehaviour
             RectTransform o = Instantiate(obj, group);
             group.sizeDelta = new Vector2(200 * num,100);
             o.GetComponent<Button>().onClick.AddListener(() => t.isInput());
-            o.sizeDelta = new Vector2(250,75);
+            o.sizeDelta = new Vector2(270,75);
             l[i] = o.gameObject;
         }
       return l;

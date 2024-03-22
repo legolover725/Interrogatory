@@ -104,7 +104,7 @@ public class MH_Timeline : MonoBehaviour
 
     public void restartGame(){
         Destroy(GameObject.Find("gameData"));
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        SceneManager.LoadScene("Flashback0");
     }
     // Update is called once per frame
     void Update()
