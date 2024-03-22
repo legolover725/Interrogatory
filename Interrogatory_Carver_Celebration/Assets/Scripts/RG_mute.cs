@@ -6,12 +6,14 @@ using UnityEngine.UI;
 public class RG_mute : MonoBehaviour
 {
     private Image image;
-    [SerializeField] Sprite mute;
-    [SerializeField] Sprite unmute;
+    [SerializeField] Sprite muteSprite;
+    [SerializeField] Sprite unmuteSprite;
+    private bool mute;
     // Start is called before the first frame update
     void Start()
     {
         image = GetComponent<Image>();
+        mute = false;
     }
 
     // Update is called once per frame
@@ -21,16 +23,18 @@ public class RG_mute : MonoBehaviour
     }
     //used to change the mute state
     public void changeMuteState(){
-        MH_AudioSourcer audioSourcer = GameObject.Find("Main Camera").GetComponent<MH_AudioSourcer>();
         //if muted, display the unmute sprite and switch to unmuted
-        if(audioSourcer.mute){
-            image.sprite = unmute;
-            audioSourcer.mute = !audioSourcer.mute;
+        if(mute){
+            image.sprite = unmuteSprite;
+            AudioListener.volume = 1;
+            mute = false;
         }
         //if not muted, display the mute sprite and switch to muted
-        else if(!audioSourcer.mute){
-            image.sprite = mute;
-            audioSourcer.mute = !audioSourcer.mute;
+        else if(!mute){
+            image.sprite = muteSprite;
+            AudioListener.volume = 0;
+            mute = true;
         }
+        Debug.Log("mute state: " + mute);
     }
 }

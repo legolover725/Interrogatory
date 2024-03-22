@@ -77,11 +77,6 @@ public class MH_AudioSourcer: MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(mute){
-            AudioListener.volume = 0;
-        }
-        else{
-            AudioListener.volume = 1;
-        }
+        
     }
 }
