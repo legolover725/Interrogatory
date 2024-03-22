@@ -6,18 +6,31 @@ using UnityEngine.SceneManagement;
 public class MH_SetScene : MonoBehaviour
 {
     public MH_SaveData sd;
-    public string t;
+    public List<string> t = new List<string>();
+    public int progression;
+    public string l;
     public float duration;
+    public bool isInScene;
 
     public void sceneLoad(){
-        if(sd != null)
+        if(sd != null){
+        progression++;
             sd.convertToData();
-        SceneManager.LoadScene(t);
+            SceneManager.LoadScene(t[progression -1]);
+        }else{
+            SceneManager.LoadScene(t[0]);
+        }
+        
     }
     // Start is called before the first frame update
     void Start()
     {
-       //StartCoroutine(delayTime("Flashback1",duration));  
+        if(!isInScene) 
+        sd = GameObject.Find("gameData").GetComponent<MH_SaveData>();
+       StartCoroutine(delayTime(l,duration));  
+    }
+    public void endlist(){
+        progression = 0;
     }
 
     public IEnumerator delayTime(string currentScene, float time){

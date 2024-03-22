@@ -15,23 +15,28 @@ public class MH_SaveData : MonoBehaviour
         public float[] scoreSystem;
         public List<MH_Inventory.MH_Image> e = new List<MH_Inventory.MH_Image>();
        
-        public gameState(MH_Responses r, MH_Timeline t,MH_Inventory inv){
+        public gameState(MH_Responses r, MH_Timeline t,MH_Inventory inv, MH_SetScene ss){
             p1 = r.progression;
             s = r.suspicionMeter;
             p2 = t.progression;
             e = inv.evidence;
-
+            p3 =ss.progression;
             scoreSystem = new float[r.list.Count];
             for(int i = 0; i < scoreSystem.Length; i++){
                 scoreSystem[i] = r.list[i].score;
             }
         }
 
-        public void spreadData(MH_Responses r, MH_Timeline t, MH_Inventory inv){
+        public void spreadData(MH_Responses r, MH_Timeline t, MH_Inventory inv,MH_SetScene ss){
             Debug.Log(p2);
+            if(p2 == 0){
            p2++;
+            }else{
+                p2++;
+            }
             t.progression = p2;
             r.progression = p1;
+            ss.progression = p3;
             r.suspicionMeter = s;
             inv.evidence = e;
              for(int i = 0; i < scoreSystem.Length; i++){
@@ -41,12 +46,13 @@ public class MH_SaveData : MonoBehaviour
     }
     public MH_Responses r;
     public MH_Timeline t;
+    public MH_SetScene ss;
     public MH_Inventory inv;
     public gameState g;
-    public int s,y;
+    public int s,y,o;
     public void convertToData(){
         if(r != null && t != null){
-        g = new gameState(r,t,inv);
+        g = new gameState(r,t,inv,ss);
         s = g.p1;
         y = g.p2;
         }
@@ -59,7 +65,7 @@ public class MH_SaveData : MonoBehaviour
 
     public void putData(){
         if(g != null)
-        g.spreadData(r,t,inv);
+        g.spreadData(r,t,inv,ss);
     }
 
     void Awake(){
@@ -76,6 +82,8 @@ public class MH_SaveData : MonoBehaviour
               t = GameObject.Find("Decider").GetComponent<MH_Timeline>();
         r = GameObject.Find("PanelUI").GetComponent<MH_Responses>();
         inv = GameObject.Find("Inventory").GetComponent<MH_Inventory>();
+        ss = GameObject.Find("UI camera").GetComponent<MH_SetScene>();
+        
         putData();
        
     }
@@ -85,7 +93,9 @@ public class MH_SaveData : MonoBehaviour
               if(g == null){
                     r.progression = 0;
                     t.progression = 0;
+                    ss.progression = 0;
               }
+              
     }
 
     // Update is called once per frame
