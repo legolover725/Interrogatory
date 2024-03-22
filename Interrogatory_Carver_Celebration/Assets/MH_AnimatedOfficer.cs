@@ -37,7 +37,8 @@ public class MH_Animatedeer : MonoBehaviour
         if(a2 != null)
         name.GetComponent<Animation>().Play(a2.name);
         if(name == head){
-            head.transform.position = new Vector3(0,0,0);
+           // head.transform.position = new Vector3(0,0,0);
+            //head.transform.rotation = Quaternion.Euler(0,0,0);
         }
     }
 
