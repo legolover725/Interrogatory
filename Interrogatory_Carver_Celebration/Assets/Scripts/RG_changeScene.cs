@@ -19,6 +19,11 @@ public class RG_changeScene : MonoBehaviour
     }
 
     public void setScene(string scene){
-        SceneManager.LoadScene(scene);
+        if(scene == "Quit"){
+            Application.Quit();
+        }
+        else{
+            SceneManager.LoadScene(scene);
+        }
     }
 }
